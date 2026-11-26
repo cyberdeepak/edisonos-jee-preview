@@ -28,8 +28,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500;600&family=Rethink+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/global.css?v=19">
-  <link rel="stylesheet" href="css/jee-main.css?v=19">
+  <link rel="stylesheet" href="css/global.css?v=20">
+  <link rel="stylesheet" href="css/jee-main.css?v=20">
   <script>document.documentElement.classList.remove('no-js');</script>
 
   <!-- Structured data -->
@@ -796,16 +796,39 @@
           </div>
           <div class="jee-outcome_grid">
             <article class="jee-outcome_card reveal">
+              <div class="jee-outcome_visual" aria-hidden="true">
+                <div class="outcome-ui_notification"><span class="outcome-ui_bell">🔔</span><div><b>Test completed</b><i>Aarav completed JEE Main Full Mock 08</i></div></div>
+                <div class="outcome-ui_notification is-faded"><span class="outcome-ui_bell">🔔</span><div><b>Test reminder</b><i>Mock 09 starts Sunday, 9:00 AM</i></div></div>
+              </div>
               <p class="jee-outcome_kicker">For parents</p>
               <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Progress they can see without asking</h3>
               <p class="text-color-secondary">A read-only parent dashboard with scores, chapter-wise performance and review history, plus alerts when a test is started, completed or coming up.</p>
             </article>
             <article class="jee-outcome_card reveal">
+              <div class="jee-outcome_visual" aria-hidden="true">
+                <div class="outcome-ui_chart-head"><b>Score progression</b><span>Target 250</span></div>
+                <svg class="outcome-ui_chart" viewBox="0 0 240 80" preserveAspectRatio="none">
+                  <line x1="0" y1="12" x2="240" y2="12" class="outcome-ui_target"/>
+                  <path class="outcome-ui_area" d="M8,66 L46,55 L84,50 L122,39 L160,35 L198,26 L232,20 L232,80 L8,80 Z"/>
+                  <path class="outcome-ui_line" d="M8,66 L46,55 L84,50 L122,39 L160,35 L198,26 L232,20"/>
+                  <circle cx="232" cy="20" r="4" class="outcome-ui_dot"/>
+                </svg>
+                <div class="outcome-ui_axis text-style-mono"><span>M1 · 148</span><span>M7 · 212</span></div>
+              </div>
               <p class="jee-outcome_kicker">For students</p>
               <h3 class="heading-style-h4 margin-bottom margin-xxsmall">A score progression that keeps them going</h3>
               <p class="text-color-secondary">Every mock adds a point to their score progression, with the gap to their target score and the top skills to improve next.</p>
             </article>
             <article class="jee-outcome_card reveal">
+              <div class="jee-outcome_visual" aria-hidden="true">
+                <p class="outcome-ui_title">Batch report · JEE 2027 Dropper A</p>
+                <div class="outcome-ui_stats">
+                  <div><b class="text-style-mono">186</b><span>Average</span></div>
+                  <div><b class="text-style-mono">190</b><span>Median</span></div>
+                  <div><b class="text-style-mono">262</b><span>Highest</span></div>
+                </div>
+                <div class="outcome-ui_readiness"><span>Readiness</span><div class="outcome-ui_meter"><i style="--p:68"></i></div><b class="text-style-mono">68%</b></div>
+              </div>
               <p class="jee-outcome_kicker">For you</p>
               <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Batch reports for your next brochure</h3>
               <p class="text-color-secondary">Average, median, highest and lowest scores, readiness and growth for every batch, exportable whenever you need them.</p>
@@ -830,9 +853,27 @@
               </div>
             </div>
             <ol class="jee-golive_steps" role="list">
-              <li class="reveal"><span class="jee-golive_step text-style-mono">Step 01</span><h3 class="heading-style-h4">We handle the setup</h3><p class="text-color-secondary">Your logo, name and domain configured for you. Nothing to build or migrate.</p></li>
-              <li class="reveal"><span class="jee-golive_step text-style-mono">Step 02</span><h3 class="heading-style-h4">Bring your questions</h3><p class="text-color-secondary">Upload your PDF papers and DPPs. The AI Question Extractor turns them into questions you review and publish.</p></li>
-              <li class="reveal"><span class="jee-golive_step text-style-mono">Step 03</span><h3 class="heading-style-h4">Assign, track and share</h3><p class="text-color-secondary">Create batches, schedule mocks and DPPs, and share reports with faculty and parents.</p></li>
+              <li class="jee-golive_item reveal">
+                <span class="jee-golive_number" aria-hidden="true">1</span>
+                <div class="jee-golive_card">
+                  <div class="jee-golive_text"><p class="jee-golive_step">Day 1 · We do this</p><h3 class="heading-style-h4">We handle the setup</h3><p class="text-color-secondary">Your logo, name and domain configured for you. Nothing to build or migrate.</p></div>
+                  <div class="jee-golive_chip" aria-hidden="true"><span class="jee-golive_chip-icon is-green">✓</span><div><b>Domain connected</b><i class="text-style-mono">vidyaclasses.edisonos.com</i></div></div>
+                </div>
+              </li>
+              <li class="jee-golive_item reveal">
+                <span class="jee-golive_number" aria-hidden="true">2</span>
+                <div class="jee-golive_card">
+                  <div class="jee-golive_text"><p class="jee-golive_step">Day 1 · You do this</p><h3 class="heading-style-h4">Bring your questions</h3><p class="text-color-secondary">Upload your PDF papers and DPPs. The AI Question Extractor turns them into questions you review and publish.</p></div>
+                  <div class="jee-golive_chip" aria-hidden="true"><span class="jee-golive_chip-icon is-red">PDF</span><div><b>DPP-23_Electrostatics.pdf</b><i>Questions ready to review</i></div></div>
+                </div>
+              </li>
+              <li class="jee-golive_item reveal">
+                <span class="jee-golive_number" aria-hidden="true">3</span>
+                <div class="jee-golive_card">
+                  <div class="jee-golive_text"><p class="jee-golive_step">Day 2 · You're live</p><h3 class="heading-style-h4">Assign, track and share</h3><p class="text-color-secondary">Create batches, schedule mocks and DPPs, and share reports with faculty and parents.</p></div>
+                  <div class="jee-golive_chip" aria-hidden="true"><span class="jee-golive_chip-icon is-blue">▶</span><div><b>Mock 08 assigned</b><i>Batch: JEE 2027 Dropper A</i></div></div>
+                </div>
+              </li>
             </ol>
           </div>
         </div>
@@ -1017,7 +1058,7 @@
       <div class="padding-global padding-section-large">
         <div class="container-medium">
           <div class="jee-cta_content text-align-center reveal">
-            <h2 class="margin-bottom margin-small">This Sunday's mock could <span class="text-style-gradient">run on EdisonOS.</span></h2>
+            <h2 class="margin-bottom margin-small">This Sunday's mock could <span class="jee-cta_accent">run on EdisonOS.</span></h2>
             <p class="text-size-large text-color-alternate-secondary margin-bottom margin-medium max-width-medium align-center">Start a free trial and set up your first batch tonight, or talk to sales and we'll walk you through it using your own papers.</p>
             <div class="button-group is-center">
               <a href="https://console.edisonos.com/signup" class="button is-brand">Start Free Trial
@@ -1070,6 +1111,6 @@
   </div>
 </div>
 
-<script src="js/jee-main.js?v=19" defer></script>
+<script src="js/jee-main.js?v=20" defer></script>
 </body>
 </html>

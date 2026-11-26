@@ -828,3 +828,93 @@
 @media (max-width: 991px) { .jee-hero_headline { font-size: 3.25rem; } }
 @media (max-width: 767px) { .jee-hero_headline { font-size: 2.75rem; } }
 @media (max-width: 479px) { .jee-hero_headline { font-size: 2.375rem; } }
+
+
+/* =========================================================
+   v4 design polish: rhythm, headers, pill eyebrows, go-live, outcomes
+   ========================================================= */
+
+/* ---------- Rhythm: tighter, consistent section spacing ---------- */
+:root { --padding-section--large: 6rem; --padding-section--medium: 4.5rem; }
+.section_jee-problem .padding-section-large { padding-top: 3.5rem; }
+.section_jee-tour .padding-section-medium { padding-top: 2rem; }
+
+/* ---------- Eyebrows: pill labels like the live site ---------- */
+.text-style-tagline { padding: 0.3125rem 0.75rem; border: 1px solid var(--border-color--primary); border-radius: var(--radius--rounded); background: var(--background-color--primary); color: var(--text-color--secondary); font-size: 0.8125rem; font-weight: 500; letter-spacing: 0; text-transform: none; }
+.section-style-light .text-style-tagline { background: #fff; }
+.section-style-dark .text-style-tagline { background: rgba(255, 255, 255, 0.06); border-color: var(--border-color--alternate); color: var(--text-color--alternate-secondary); }
+
+/* ---------- Centred headers above full-width grids ---------- */
+.jee-problem_header, .jee-tour_header, .jee-features_header, .jee-week_header, .jee-outcome_header, .jee-licensing_header, .jee-testimonials_header, .jee-pattern_header {
+  max-width: 48rem; margin-left: auto; margin-right: auto; text-align: center;
+}
+.jee-problem_header, .jee-tour_header, .jee-features_header, .jee-week_header, .jee-outcome_header, .jee-licensing_header, .jee-testimonials_header { margin-bottom: 3rem; }
+.jee-features_header .max-width-large, .jee-week_header .max-width-large, .jee-outcome_header .max-width-large, .jee-licensing_header .max-width-large, .jee-tour_header .max-width-large { margin-left: auto; margin-right: auto; }
+.jee-problem_header h2 { max-width: 40rem; margin-left: auto; margin-right: auto; }
+.jee-week_header { padding: 0; }
+
+/* ---------- Go live: numbered timeline ---------- */
+.jee-golive_layout { align-items: start; }
+.jee-golive_intro { position: sticky; top: 7rem; padding-top: 1rem; }
+.jee-golive_steps { position: relative; gap: 1.25rem; }
+.jee-golive_steps::before { content: ""; position: absolute; left: 1.375rem; top: 2.75rem; bottom: 2.75rem; width: 2px; background: linear-gradient(var(--base-color-brand--blue-500), var(--base-color-brand--blue-50)); }
+.jee-golive_item { display: grid; grid-template-columns: 2.75rem minmax(0, 1fr); gap: 1.25rem; align-items: start; padding: 0 !important; background: none !important; border: 0 !important; }
+.jee-golive_number { position: relative; z-index: 1; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 50%; background: var(--base-color-brand--navy-980); color: #fff; font-family: var(--font-family--heading); font-weight: 700; box-shadow: 0 0 0 6px var(--background-color--primary); }
+.jee-golive_card { display: grid; gap: 1rem; padding: 1.5rem; border-radius: var(--radius--3xlarge); background: #fff; border: 1px solid var(--border-color--primary); box-shadow: var(--shadow--card); transition: transform 0.3s var(--ease--out), box-shadow 0.3s; }
+.jee-golive_card:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(15, 23, 42, 0.1); }
+.jee-golive_text { display: grid; gap: 0.375rem; }
+.jee-golive_step { font-family: var(--font-family--body); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-color--brand); }
+.jee-golive_chip { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 0.875rem; border-radius: var(--radius--xlarge); background: var(--background-color--secondary); border: 1px solid var(--border-color--primary); font-size: 0.8125rem; }
+.jee-golive_chip b { display: block; font-size: 0.8125rem; }
+.jee-golive_chip i { font-style: normal; font-size: 0.75rem; color: var(--text-color--secondary); }
+.jee-golive_chip-icon { display: grid; place-items: center; width: 2rem; height: 2rem; flex: none; border-radius: var(--radius--large); font-size: 0.6875rem; font-weight: 700; }
+.jee-golive_chip-icon.is-green { background: var(--base-color-brand--green-50); color: var(--base-color-brand--green-600); }
+.jee-golive_chip-icon.is-red { background: #fee2e2; color: var(--base-color-brand--red-500); }
+.jee-golive_chip-icon.is-blue { background: var(--base-color-brand--blue-50); color: var(--base-color-brand--blue-500); }
+
+/* ---------- Outcomes: product visual in each card ---------- */
+.jee-outcome_card { display: flex; flex-direction: column; transition: transform 0.3s var(--ease--out), box-shadow 0.3s; }
+.jee-outcome_card:hover { transform: translateY(-4px); box-shadow: var(--shadow--card); }
+.jee-outcome_visual { display: grid; gap: 0.5rem; align-content: center; min-height: 9.5rem; margin-bottom: 1.5rem; padding: 1rem; border-radius: var(--radius--2xlarge); background: var(--background-color--secondary); border: 1px solid var(--border-color--primary); }
+.outcome-ui_notification { display: flex; align-items: center; gap: 0.625rem; padding: 0.625rem 0.75rem; border-radius: var(--radius--xlarge); background: #fff; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06); font-size: 0.8125rem; }
+.outcome-ui_notification.is-faded { opacity: 0.6; transform: scale(0.97); }
+.outcome-ui_notification b { display: block; font-size: 0.8125rem; }
+.outcome-ui_notification i { font-style: normal; font-size: 0.75rem; color: var(--text-color--secondary); }
+.outcome-ui_bell { display: grid; place-items: center; width: 1.875rem; height: 1.875rem; flex: none; border-radius: 50%; background: var(--background-color--tertiary); font-size: 0.8125rem; }
+.outcome-ui_chart-head { display: flex; justify-content: space-between; font-size: 0.8125rem; }
+.outcome-ui_chart-head span { font-size: 0.6875rem; font-weight: 600; color: var(--base-color-brand--green-600); }
+.outcome-ui_chart { width: 100%; height: 4.5rem; overflow: visible; }
+.outcome-ui_target { stroke: var(--base-color-brand--green-600); stroke-width: 1.5; stroke-dasharray: 4 4; }
+.outcome-ui_area { fill: rgba(13, 153, 255, 0.12); }
+.outcome-ui_line { fill: none; stroke: var(--base-color-brand--blue-500); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.outcome-ui_dot { fill: var(--base-color-brand--blue-500); stroke: #fff; stroke-width: 2; }
+.outcome-ui_axis { display: flex; justify-content: space-between; font-size: 0.625rem; color: var(--text-color--secondary); }
+.outcome-ui_title { font-size: 0.75rem; font-weight: 600; color: var(--text-color--secondary); }
+.outcome-ui_stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.375rem; }
+.outcome-ui_stats div { display: grid; padding: 0.5rem; border-radius: var(--radius--large); background: #fff; text-align: center; }
+.outcome-ui_stats b { font-size: 1.125rem; font-weight: 600; }
+.outcome-ui_stats span { font-size: 0.625rem; color: var(--text-color--secondary); }
+.outcome-ui_readiness { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.5rem; align-items: center; font-size: 0.75rem; color: var(--text-color--secondary); }
+.outcome-ui_readiness b { color: var(--text-color--primary); font-size: 0.75rem; }
+.outcome-ui_meter { height: 0.5rem; border-radius: 1rem; background: #fff; overflow: hidden; }
+.outcome-ui_meter i { display: block; height: 100%; width: calc(var(--p) * 1%); border-radius: inherit; background: var(--base-color-brand--blue-500); }
+
+/* ---------- Testimonials: quote mark ---------- */
+.jee-testimonials_card blockquote::before { content: "\201C"; display: block; font-family: var(--font-family--heading); font-size: 3rem; line-height: 0.6; color: var(--base-color-brand--blue-500); margin-bottom: 0.5rem; }
+
+/* ---------- Final CTA accent ---------- */
+.jee-cta_accent { color: #7cc8ff; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991px) {
+  :root { --padding-section--large: 4.5rem; --padding-section--medium: 3.5rem; }
+  .jee-golive_intro { position: static; padding-top: 0; }
+}
+@media (max-width: 767px) {
+  :root { --padding-section--large: 3.75rem; --padding-section--medium: 3rem; }
+  .jee-problem_header, .jee-tour_header, .jee-features_header, .jee-week_header, .jee-outcome_header, .jee-licensing_header, .jee-testimonials_header, .jee-pattern_header { text-align: left; }
+  .jee-golive_steps::before { left: 1.125rem; }
+  .jee-golive_item { grid-template-columns: 2.25rem minmax(0, 1fr); gap: 0.875rem; }
+  .jee-golive_number { width: 2.25rem; height: 2.25rem; font-size: 0.875rem; }
+  .jee-golive_card { padding: 1.25rem; }
+}
