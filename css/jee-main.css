@@ -918,3 +918,44 @@
   .jee-golive_number { width: 2.25rem; height: 2.25rem; font-size: 0.875rem; }
   .jee-golive_card { padding: 1.25rem; }
 }
+
+
+/* =========================================================
+   v5 exam pattern: fact tiles + tip cards
+   ========================================================= */
+.section_jee-pattern .padding-section-large { padding-bottom: 4.5rem; }
+.jee-pattern_cards { margin: 1.25rem 0 3rem; }
+.jee-pattern_card { align-items: flex-start; padding: 1.25rem 1.375rem; border: 1px solid var(--border-color--primary); background: #fff; font-size: 0.9375rem; line-height: 1.5; }
+.jee-pattern_value { font-size: 1.75rem; line-height: 1.1; min-width: 2.25rem; }
+
+.jee-pattern_block-head { display: grid; gap: 0.25rem; margin-bottom: 1.5rem; }
+.jee-pattern_block-title { font-size: 1.375rem; line-height: 1.25; letter-spacing: -0.02em; }
+.jee-pattern_block-sub { font-size: 0.9375rem; color: var(--text-color--secondary); }
+
+.jee-pattern_facts { padding: 2rem; border-radius: var(--radius--3xlarge); border: 1px solid var(--border-color--primary); background: #fff; margin-bottom: 1.25rem; }
+.jee-pattern_fact-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.875rem; margin: 0; }
+.jee-pattern_fact { display: grid; grid-template-columns: 2.5rem minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 0.875rem; row-gap: 0.25rem; align-items: start; padding: 1.125rem; border-radius: var(--radius--2xlarge); background: var(--background-color--secondary); border: 1px solid var(--border-color--primary); transition: border-color 0.2s, transform 0.3s var(--ease--out); }
+.jee-pattern_fact:hover { border-color: var(--base-color-brand--blue-500); transform: translateY(-2px); }
+.jee-pattern_fact-icon { grid-row: 1 / 3; display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: var(--radius--xlarge); background: #fff; border: 1px solid var(--border-color--primary); font-size: 1.125rem; }
+.jee-pattern_fact dt { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-color--muted); }
+.jee-pattern_fact dd { display: grid; gap: 0.125rem; margin: 0; }
+.jee-pattern_fact dd b { font-family: var(--font-family--heading); font-size: 1.125rem; font-weight: 700; line-height: 1.3; color: var(--text-color--primary); }
+.jee-pattern_fact dd span { font-size: 0.875rem; line-height: 1.45; color: var(--text-color--secondary); }
+.jee-pattern_note { display: flex; gap: 0.5rem; margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--border-color--primary); font-size: 0.8125rem; line-height: 1.5; color: var(--text-color--muted); }
+
+.jee-pattern_tips { padding: 2rem; border-radius: var(--radius--3xlarge); background: linear-gradient(135deg, var(--base-color-brand--blue-50), #f5faff); border: 1px solid #cfe8fc; }
+.jee-pattern_tip-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.875rem; list-style: none; padding: 0; margin: 0; }
+.jee-pattern_tip { display: grid; gap: 0.5rem; align-content: start; padding: 1.375rem; border-radius: var(--radius--2xlarge); background: #fff; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 6px 18px rgba(13, 153, 255, 0.07); }
+.jee-pattern_tip-number { justify-self: start; padding: 0.1875rem 0.5rem; border-radius: var(--radius--rounded); background: var(--base-color-brand--blue-500); color: #fff; font-size: 0.75rem; font-weight: 600; }
+.jee-pattern_tip-title { font-size: 1.0625rem; line-height: 1.3; }
+.jee-pattern_tip p { font-size: 0.9375rem; line-height: 1.55; color: var(--text-color--secondary); }
+
+@media (max-width: 991px) {
+  .jee-pattern_fact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .section_jee-pattern .padding-section-large { padding-bottom: 3rem; }
+  .jee-pattern_facts, .jee-pattern_tips { padding: 1.25rem; }
+  .jee-pattern_fact-grid, .jee-pattern_tip-grid { grid-template-columns: minmax(0, 1fr); }
+  .jee-pattern_block-title { font-size: 1.1875rem; }
+}
