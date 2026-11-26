@@ -28,8 +28,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500;600&family=Rethink+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/global.css?v=17">
-  <link rel="stylesheet" href="css/jee-main.css?v=17">
+  <link rel="stylesheet" href="css/global.css?v=19">
+  <link rel="stylesheet" href="css/jee-main.css?v=19">
   <script>document.documentElement.classList.remove('no-js');</script>
 
   <!-- Structured data -->
@@ -82,7 +82,7 @@
           { "@type": "Question", "name": "Can I convert my existing PDF question papers and DPPs into online tests?",
             "acceptedAnswer": { "@type": "Answer", "text": "Yes. The AI Question Extractor (currently in beta) reads a PDF and turns it into structured questions you can review, tag by chapter and save to your question bank, then use in mock tests or DPPs." } },
           { "@type": "Question", "name": "Is there an NTA-style test interface for JEE Main on EdisonOS?",
-            "acceptedAnswer": { "@type": "Answer", "text": "An NTA-style test screen for JEE Main is coming soon to EdisonOS, mirroring the real exam with a question palette, mark for review, numerical answer entry and +4 / −1 marking. Book a demo to see the roadmap and join early access." } },
+            "acceptedAnswer": { "@type": "Answer", "text": "An NTA-style test screen for JEE Main is coming soon to EdisonOS, mirroring the real exam with a question palette, mark for review, numerical answer entry and +4 / −1 marking. Talk to sales to see the roadmap and join early access." } },
           { "@type": "Question", "name": "Do students need to install any software to take the test?",
             "acceptedAnswer": { "@type": "Answer", "text": "No. Tests run in a web browser on a laptop or desktop. Before starting, a system-check screen confirms the browser, connection and display are ready, so students are not surprised mid-test." } },
           { "@type": "Question", "name": "What analysis do faculty get after each JEE mock test?",
@@ -94,7 +94,7 @@
           { "@type": "Question", "name": "What is the JEE Main exam pattern for Paper 1 (B.E./B.Tech)?",
             "acceptedAnswer": { "@type": "Answer", "text": "JEE Main Paper 1 is a 3-hour computer-based test with 75 questions worth 300 marks: 25 each in Physics, Chemistry and Mathematics. Each subject has 20 multiple-choice questions and 5 numerical value questions, all compulsory. A correct answer earns +4 and an incorrect answer −1." } },
           { "@type": "Question", "name": "How is EdisonOS priced for coaching institutes?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Plans are priced per academy, and student access is managed through test credits or time-based licences per programme. You can start with a free trial; see the pricing page or book a demo for a quote for your batch size." } }
+            "acceptedAnswer": { "@type": "Answer", "text": "Plans are priced per academy, and student access is managed through test credits or time-based licences per programme. You can start with a free trial; see the pricing page or talk to sales for a quote for your batch size." } }
         ]
       }
     ]
@@ -107,7 +107,7 @@
 
 <div class="page-wrapper">
 
-  <!-- ===================== NAVIGATION (component) ===================== -->
+  <!-- ===================== NAVIGATION (component: mirrors the live edisonos.com nav) ===================== -->
   <div class="navbar_component" data-nav>
     <div class="padding-global">
       <div class="container-large">
@@ -116,16 +116,25 @@
             <img src="https://cdn.prod.website-files.com/6a6d8459cbcde2a9c7f35c62/6a6d8459cbcde2a9c7f35d0a_256%20B.avif" alt="EdisonOS" class="navbar_logo" width="132" height="32">
           </a>
           <ul class="navbar_menu" id="navbar-menu" role="list">
-            <li><a href="#try-a-mock" class="navbar_link">Mini mock</a></li>
-            <li><a href="#features" class="navbar_link">Features</a></li>
-            <li><a href="#analysis" class="navbar_link">Analysis</a></li>
-            <li><a href="#exam-pattern" class="navbar_link">Exam pattern</a></li>
+            <li class="navbar_dropdown">
+              <button type="button" class="navbar_link navbar_dropdown-toggle" aria-expanded="false" aria-controls="navbar-programs">Programs <span aria-hidden="true">▾</span></button>
+              <ul class="navbar_dropdown-list" id="navbar-programs" role="list">
+                <li><a href="https://www.edisonos.com/digital-sat">Digital SAT</a></li>
+                <li><a href="https://www.edisonos.com/act">ACT</a></li>
+                <li><a href="https://www.edisonos.com/psat">PSAT</a></li>
+                <li><a href="https://www.edisonos.com/shsat">SHSAT</a></li>
+                <li><a href="https://www.edisonos.com/ap">AP</a></li>
+                <li><a href="https://www.edisonos.com/jee-main-mock-test-platform" aria-current="page">JEE Main <span class="badge-new">New</span></a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.edisonos.com/tutoring-schools" class="navbar_link">Solutions</a></li>
+            <li><a href="https://www.edisonos.com/ai-question-extractor" class="navbar_link">Features</a></li>
             <li><a href="https://www.edisonos.com/pricing" class="navbar_link">Pricing</a></li>
-            <li class="navbar_menu-cta"><a href="https://www.edisonos.com/book-a-demo" class="button is-secondary is-small">Book a demo</a></li>
+            <li><a href="https://www.edisonos.com/blogs" class="navbar_link">Resources</a></li>
+            <li class="navbar_menu-cta"><a href="https://www.edisonos.com/book-a-demo" class="button is-secondary is-small">Talk to Sales</a></li>
           </ul>
           <div class="navbar_actions">
-            <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary is-small navbar_demo">Book a demo</a>
-            <a href="https://console.edisonos.com/signup" class="button is-brand is-small">Start free trial</a>
+            <a href="https://console.edisonos.com/signup" class="button is-brand is-small">Start Free Trial</a>
             <button class="navbar_menu-button" type="button" aria-expanded="false" aria-controls="navbar-menu" aria-label="Open menu" data-nav-toggle>
               <span></span><span></span><span></span>
             </button>
@@ -138,7 +147,7 @@
   <main id="main" class="main-wrapper">
 
     <!-- ===================== HERO ===================== -->
-    <header class="section_jee-hero section-style-dark">
+    <header class="section_jee-hero">
       <div class="jee-hero_background" aria-hidden="true">
         <div class="jee-hero_grid"></div>
         <div class="jee-hero_glow is-blue"></div>
@@ -156,27 +165,29 @@
                 <a href="https://www.edisonos.com/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">JEE Main</span>
               </nav>
               <div class="jee-hero_badge">
-                <span class="jee-hero_badge-dot" aria-hidden="true"></span>
-                For JEE coaching institutes &amp; tutors
+                <span class="badge-new">New</span>
+                JEE Main for coaching institutes &amp; tutors
               </div>
               <h1 class="jee-hero_heading">
                 <span class="jee-hero_kicker">The JEE Main mock test platform for coaching institutes</span>
                 <span class="jee-hero_headline">Sunday's mock.<br><span class="text-style-gradient">Monday's game plan.</span></span>
               </h1>
-              <p class="text-size-large text-color-alternate-secondary jee-hero_paragraph">
+              <p class="text-size-large text-color-secondary jee-hero_paragraph">
                 Run your JEE Main test series under your own brand. Students write the mock on Sunday morning, and before they're home you know who's stuck on Rotational Motion, who's rushing, and who's guessing their way into negative marks.
               </p>
               <div class="button-group">
-                <a href="https://console.edisonos.com/signup" class="button is-brand">Start free trial
+                <a href="https://console.edisonos.com/signup" class="button is-brand">Start Free Trial
                   <svg class="button_icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
-                <a href="#try-a-mock" class="button is-secondary-alternate">Take a 90-second mini mock</a>
+                <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary">Talk to Sales</a>
               </div>
               <ul class="jee-hero_proof" role="list">
-                <li>Your logo, domain &amp; email</li>
+                <li>Your logo, domain and sender email on every test</li>
+                <li>Turn your PDF papers and DPPs into online tests</li>
+                <li>Parent dashboards and chapter-wise reports included</li>
                 <li>NTA-style test screen <span class="badge-soon">Coming soon</span></li>
-                <li>Parent dashboards included</li>
               </ul>
+              <a href="#try-a-mock" class="jee-hero_mock-link">Or take a 90-second JEE mini mock →</a>
             </div>
 
             <!-- Layered stack of real EdisonOS screens: Review Sets (back), Score progression (middle), Report overview (front) -->
@@ -267,6 +278,23 @@
         <ul class="jee-marquee_list" role="list" aria-hidden="true">
           <li>Kinematics</li><li>Rotational Motion</li><li>Electrostatics</li><li>Modern Physics</li><li>Thermodynamics</li><li>Mole Concept</li><li>Chemical Bonding</li><li>Coordination Compounds</li><li>GOC</li><li>Electrochemistry</li><li>Definite Integration</li><li>Conic Sections</li><li>Matrices &amp; Determinants</li><li>Probability</li><li>Vectors &amp; 3D</li><li>Complex Numbers</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SOCIAL PROOF STRIP (mirrors the live "Trusted by" component) ===================== -->
+    <section class="section_jee-proof" aria-label="Who uses EdisonOS">
+      <div class="padding-global padding-section-small">
+        <div class="container-large">
+          <p class="jee-proof_label">Trusted by 100+ organisations, from solo tutors to school districts</p>
+          <ul class="jee-proof_logos" role="list">
+            <li>Summit Prep</li><li>SoFlo Tutors</li><li>Krupnick Approach</li><li>Prep Expert</li><li>GradePower Learning</li><li>Legrand Prep</li>
+          </ul>
+          <div class="jee-proof_stats">
+            <div><b class="text-style-mono">100+</b><span>Organisations</span></div>
+            <div><b class="text-style-mono">200,000+</b><span>Tests administered</span></div>
+            <div><b class="text-style-mono">10+</b><span>High-stakes tests supported</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -502,7 +530,7 @@
               </p>
               <ul class="jee-analysis_list" role="list">
                 <li>Score, accuracy, time per question and gap to target score</li>
-                <li>Performance by subject, chapter and skill</li>
+                <li>Performance by subject, chapter and skill, plus a skill × difficulty breakdown for every student</li>
                 <li>Performance by difficulty and by time spent</li>
                 <li>Answer changes, full response review and session logs</li>
                 <li>Batch reports: average, median, highest, lowest and readiness</li>
@@ -609,10 +637,10 @@
               <div class="text-style-tagline margin-bottom margin-xsmall">Convert PDF question papers to online tests</div>
               <h2 class="margin-bottom margin-small">Ten years of DPPs in a Drive folder? Put them to work.</h2>
               <p class="text-size-medium text-color-secondary margin-bottom margin-small">
-                Upload a PDF and the AI Question Extractor turns it into structured questions. Review and edit them, tag them by chapter and difficulty in your question bank, and use them in any mock or DPP.
+                Turn the questions you already have into digital practice. Upload a PDF and the AI Question Extractor pulls out every question, with its options, figures and answers. You review and edit them, tag them by chapter and difficulty, and use them in any mock or DPP. The AI reads your papers; it never writes your questions.
               </p>
               <p class="text-size-small text-color-muted margin-bottom margin-medium">AI Question Extractor is in beta. Your content stays in your library.</p>
-              <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary">See it on your own PDF
+              <a href="https://console.edisonos.com/signup" class="button is-brand">Upload your first PDF free
                 <svg class="button_icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
@@ -757,34 +785,87 @@
       </div>
     </section>
 
-    <!-- ===================== ROLES ===================== -->
-    <section class="section_jee-roles section-style-light">
+    <!-- ===================== OUTCOMES ===================== -->
+    <section class="section_jee-outcome section-style-light">
       <div class="padding-global padding-section-large">
         <div class="container-large">
-          <div class="jee-roles_header reveal">
-            <div class="text-style-tagline margin-bottom margin-xsmall">One platform, four dashboards</div>
-            <h2>One platform. Four very different people.</h2>
+          <div class="jee-outcome_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">Results you can show</div>
+            <h2 class="margin-bottom margin-small">Results are what sell next year's batch</h2>
+            <p class="text-size-medium text-color-secondary max-width-large">When the prep falls short, it's your institute's name on the line. EdisonOS gives you the proof: for parents this term, and for admissions next year.</p>
           </div>
-          <div class="jee-roles_grid">
-            <article class="jee-roles_card reveal">
-              <span class="jee-roles_emoji" aria-hidden="true">🏫</span>
-              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Directors &amp; admins</h3>
-              <p class="text-color-secondary">Enrol students and faculty in bulk, manage licences and test credits, set branding, notifications and SSO, and see reports for every batch.</p>
+          <div class="jee-outcome_grid">
+            <article class="jee-outcome_card reveal">
+              <p class="jee-outcome_kicker">For parents</p>
+              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Progress they can see without asking</h3>
+              <p class="text-color-secondary">A read-only parent dashboard with scores, chapter-wise performance and review history, plus alerts when a test is started, completed or coming up.</p>
             </article>
-            <article class="jee-roles_card reveal">
-              <span class="jee-roles_emoji" aria-hidden="true">👩‍🏫</span>
-              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Faculty</h3>
-              <p class="text-color-secondary">See only their own batches. Assign mocks and DPPs, track progress dots, resolve doubts and build review sets for students.</p>
+            <article class="jee-outcome_card reveal">
+              <p class="jee-outcome_kicker">For students</p>
+              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">A score progression that keeps them going</h3>
+              <p class="text-color-secondary">Every mock adds a point to their score progression, with the gap to their target score and the top skills to improve next.</p>
             </article>
-            <article class="jee-roles_card reveal">
-              <span class="jee-roles_emoji" aria-hidden="true">🎯</span>
-              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Students</h3>
-              <p class="text-color-secondary">An "Up next" list, their study plan, every mock and DPP, review sets and a clear view of where they stand against their target.</p>
+            <article class="jee-outcome_card reveal">
+              <p class="jee-outcome_kicker">For you</p>
+              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Batch reports for your next brochure</h3>
+              <p class="text-color-secondary">Average, median, highest and lowest scores, readiness and growth for every batch, exportable whenever you need them.</p>
             </article>
-            <article class="jee-roles_card reveal">
-              <span class="jee-roles_emoji" aria-hidden="true">👨‍👩‍👧</span>
-              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Parents</h3>
-              <p class="text-color-secondary">A read-only view of their child's scores, coursework, chapter performance and review history, with alerts when tests are completed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GO LIVE (mirrors the live "Go live in minutes" section) ===================== -->
+    <section class="section_jee-golive">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-golive_layout">
+            <div class="jee-golive_intro reveal">
+              <div class="text-style-tagline margin-bottom margin-xsmall">Switching is easy</div>
+              <h2 class="margin-bottom margin-small">Go live in minutes, not hours</h2>
+              <p class="text-size-medium text-color-secondary margin-bottom margin-medium">Moving your test series sounds like a nightmare. It isn't. We handle the setup; you bring the students and your papers.</p>
+              <div class="button-group">
+                <a href="https://console.edisonos.com/signup" class="button is-brand">Start Free Trial</a>
+                <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary">Talk to Sales</a>
+              </div>
+            </div>
+            <ol class="jee-golive_steps" role="list">
+              <li class="reveal"><span class="jee-golive_step text-style-mono">Step 01</span><h3 class="heading-style-h4">We handle the setup</h3><p class="text-color-secondary">Your logo, name and domain configured for you. Nothing to build or migrate.</p></li>
+              <li class="reveal"><span class="jee-golive_step text-style-mono">Step 02</span><h3 class="heading-style-h4">Bring your questions</h3><p class="text-color-secondary">Upload your PDF papers and DPPs. The AI Question Extractor turns them into questions you review and publish.</p></li>
+              <li class="reveal"><span class="jee-golive_step text-style-mono">Step 03</span><h3 class="heading-style-h4">Assign, track and share</h3><p class="text-color-secondary">Create batches, schedule mocks and DPPs, and share reports with faculty and parents.</p></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LICENSING ===================== -->
+    <section class="section_jee-licensing section-style-light" id="pricing">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-licensing_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">Flexible licensing</div>
+            <h2 class="margin-bottom margin-small">Pay per test, or per student. Your call.</h2>
+            <p class="text-size-medium text-color-secondary max-width-large">Mix both across batches: credits for crash courses and test series, licences for your two-year classroom programme.</p>
+          </div>
+          <div class="jee-licensing_grid">
+            <article class="jee-licensing_card reveal">
+              <p class="jee-licensing_name">Test credits</p>
+              <p class="jee-licensing_lead">Pay only when a student sits a test</p>
+              <ul role="list"><li>A credit is used when a student starts a mock or problem set</li><li>Set a credit limit per student</li><li>Ideal for test series and short courses</li></ul>
+            </article>
+            <article class="jee-licensing_card is-featured reveal">
+              <p class="jee-licensing_name">Student licences</p>
+              <p class="jee-licensing_lead">Unlimited practice for a fixed period</p>
+              <ul role="list"><li>1, 3 or 12-month licences per student</li><li>When a licence ends, the student moves to credits</li><li>Ideal for one- and two-year JEE programmes</li></ul>
+            </article>
+            <article class="jee-licensing_card is-contact reveal">
+              <p class="jee-licensing_name">Pricing for your institute</p>
+              <p class="jee-licensing_lead">Tell us your batch sizes and we'll put together a plan</p>
+              <div class="button-group">
+                <a href="https://www.edisonos.com/book-a-demo" class="button is-brand is-small">Talk to Sales</a>
+                <a href="https://www.edisonos.com/pricing" class="button is-secondary is-small">See Pricing</a>
+              </div>
             </article>
           </div>
         </div>
@@ -852,30 +933,19 @@
       </div>
     </section>
 
-    <!-- ===================== COMPARISON ===================== -->
-    <section class="section_jee-compare section-style-light">
+    <!-- ===================== TESTIMONIALS (quotes from the live "Trusted by" component) ===================== -->
+    <section class="section_jee-testimonials section-style-light">
       <div class="padding-global padding-section-large">
         <div class="container-large">
-          <div class="jee-compare_header reveal">
-            <div class="text-style-tagline margin-bottom margin-xsmall">Compare</div>
-            <h2>Why institutes move their test series to EdisonOS</h2>
+          <div class="jee-testimonials_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">Customer love</div>
+            <h2 class="margin-bottom margin-small">Trusted by solo tutors to school districts</h2>
+            <p class="text-size-medium text-color-secondary">100+ tutoring companies, learning centres and schools run their test prep on EdisonOS.</p>
           </div>
-          <div class="jee-compare_table-wrapper reveal">
-            <table class="jee-compare_table">
-              <caption class="visually-hidden">EdisonOS compared with paper tests, generic quiz forms and general LMS tools</caption>
-              <thead>
-                <tr><th scope="col"></th><th scope="col">Paper &amp; OMR</th><th scope="col">Generic quiz forms</th><th scope="col">General LMS</th><th scope="col" class="is-highlight">EdisonOS</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">NTA-style test screen</th><td>✕</td><td>✕</td><td>✕</td><td class="is-highlight">Coming soon</td></tr>
-                <tr><th scope="row">Timed, scheduled tests with attempt rules</th><td>Manual</td><td>Limited</td><td>Partial</td><td class="is-highlight">✓</td></tr>
-                <tr><th scope="row">Instant analysis by chapter, difficulty &amp; time</th><td>✕</td><td>✕</td><td>Partial</td><td class="is-highlight">✓</td></tr>
-                <tr><th scope="row">PDF → online test</th><td>✕</td><td>✕</td><td>✕</td><td class="is-highlight">✓ <span class="text-size-tiny">beta</span></td></tr>
-                <tr><th scope="row">Batches &amp; scheduled study plans</th><td>✕</td><td>✕</td><td>✓</td><td class="is-highlight">✓</td></tr>
-                <tr><th scope="row">Parent dashboard</th><td>✕</td><td>✕</td><td>Partial</td><td class="is-highlight">✓</td></tr>
-                <tr><th scope="row">Your brand &amp; domain</th><td>✓</td><td>✕</td><td>Partial</td><td class="is-highlight">✓</td></tr>
-              </tbody>
-            </table>
+          <div class="jee-testimonials_grid">
+            <figure class="jee-testimonials_card reveal"><blockquote>"The more we use your platform, the more impressed we are. It's been an invaluable resource for our needs!"</blockquote><figcaption><span class="jee-testimonials_avatar">JK</span><span><b>Joe Krupnick</b>Krupnick Approach</span></figcaption></figure>
+            <figure class="jee-testimonials_card reveal"><blockquote>"Amazing! Your responsiveness is unmatched, and I'm thrilled to be on your platform!"</blockquote><figcaption><span class="jee-testimonials_avatar">ME</span><span><b>Michael Ermann</b>OliveBook</span></figcaption></figure>
+            <figure class="jee-testimonials_card reveal"><blockquote>"The platform's tools are perfect for my classes and videos. Enjoy working with your team!"</blockquote><figcaption><span class="jee-testimonials_avatar">NL</span><span><b>Nara Legrand</b>Legrand Prep</span></figcaption></figure>
           </div>
         </div>
       </div>
@@ -904,7 +974,7 @@
             </details>
             <details class="jee-faq_item">
               <summary><h3 class="jee-faq_question">Is there an NTA-style test interface for JEE Main on EdisonOS?</h3></summary>
-              <p class="jee-faq_answer">An NTA-style test screen for JEE Main is coming soon to EdisonOS, mirroring the real exam with a question palette, mark for review, numerical answer entry and +4 / −1 marking. <a href="https://www.edisonos.com/book-a-demo">Book a demo</a> to see the roadmap and join early access.</p>
+              <p class="jee-faq_answer">An NTA-style test screen for JEE Main is coming soon to EdisonOS, mirroring the real exam with a question palette, mark for review, numerical answer entry and +4 / −1 marking. <a href="https://www.edisonos.com/book-a-demo">Talk to sales</a> to see the roadmap and join early access.</p>
             </details>
             <details class="jee-faq_item">
               <summary><h3 class="jee-faq_question">Do students need to install any software to take the test?</h3></summary>
@@ -928,7 +998,7 @@
             </details>
             <details class="jee-faq_item">
               <summary><h3 class="jee-faq_question">How is EdisonOS priced for coaching institutes?</h3></summary>
-              <p class="jee-faq_answer">Plans are priced per academy, and student access is managed through test credits or time-based licences per programme. You can start with a free trial; see the <a href="https://www.edisonos.com/pricing">pricing page</a> or <a href="https://www.edisonos.com/book-a-demo">book a demo</a> for a quote for your batch size.</p>
+              <p class="jee-faq_answer">Plans are priced per academy, and student access is managed through test credits or time-based licences per programme. You can start with a free trial; see the <a href="https://www.edisonos.com/pricing">pricing page</a> or <a href="https://www.edisonos.com/book-a-demo">talk to sales</a> for a quote for your batch size.</p>
             </details>
           </div>
           <p class="text-size-small text-color-secondary text-align-center margin-top margin-large">
@@ -948,12 +1018,12 @@
         <div class="container-medium">
           <div class="jee-cta_content text-align-center reveal">
             <h2 class="margin-bottom margin-small">This Sunday's mock could <span class="text-style-gradient">run on EdisonOS.</span></h2>
-            <p class="text-size-large text-color-alternate-secondary margin-bottom margin-medium max-width-medium align-center">Start a free trial and set up your first batch tonight, or book a demo and we'll walk you through it using your own papers.</p>
+            <p class="text-size-large text-color-alternate-secondary margin-bottom margin-medium max-width-medium align-center">Start a free trial and set up your first batch tonight, or talk to sales and we'll walk you through it using your own papers.</p>
             <div class="button-group is-center">
-              <a href="https://console.edisonos.com/signup" class="button is-brand">Start free trial
+              <a href="https://console.edisonos.com/signup" class="button is-brand">Start Free Trial
                 <svg class="button_icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
-              <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary-alternate">Book a demo</a>
+              <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary-alternate">Talk to Sales</a>
             </div>
           </div>
         </div>
@@ -976,8 +1046,8 @@
               <ul role="list"><li><a href="https://www.edisonos.com/pricing">Pricing</a></li><li><a href="https://www.edisonos.com/changelog">Changelog</a></li><li><a href="https://www.edisonos.com/comparison">Compare</a></li><li><a href="https://help.edisonos.com/">Help Center</a></li></ul>
             </div>
             <div>
-              <p class="footer_heading">Exams</p>
-              <ul role="list"><li><a href="https://www.edisonos.com/jee-main-mock-test-platform" aria-current="page">JEE Main</a></li><li><a href="https://www.edisonos.com/free-digital-sat-practice-test">Digital SAT</a></li><li><a href="https://www.edisonos.com/free-act-online-practice-test">ACT</a></li></ul>
+              <p class="footer_heading">Programs</p>
+              <ul role="list"><li><a href="https://www.edisonos.com/digital-sat">Digital SAT</a></li><li><a href="https://www.edisonos.com/act">ACT</a></li><li><a href="https://www.edisonos.com/psat">PSAT</a></li><li><a href="https://www.edisonos.com/shsat">SHSAT</a></li><li><a href="https://www.edisonos.com/ap">AP</a></li><li><a href="https://www.edisonos.com/jee-main-mock-test-platform" aria-current="page">JEE Main</a></li></ul>
             </div>
             <div>
               <p class="footer_heading">Company</p>
@@ -995,11 +1065,11 @@
 
   <!-- Mobile sticky CTA -->
   <div class="sticky-cta_component" data-sticky-cta>
-    <a href="https://console.edisonos.com/signup" class="button is-brand is-small">Start free trial</a>
-    <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary is-small">Book a demo</a>
+    <a href="https://console.edisonos.com/signup" class="button is-brand is-small">Start Free Trial</a>
+    <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary is-small">Talk to Sales</a>
   </div>
 </div>
 
-<script src="js/jee-main.js?v=17" defer></script>
+<script src="js/jee-main.js?v=19" defer></script>
 </body>
 </html>

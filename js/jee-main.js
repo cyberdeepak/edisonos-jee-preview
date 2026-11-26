@@ -54,6 +54,22 @@
     });
   }
 
+  /* ---------------- Programs dropdown (click on touch/mobile, hover/focus on desktop via CSS) ---------------- */
+  $$('.navbar_dropdown').forEach(function (dd) {
+    var btn = $('.navbar_dropdown-toggle', dd);
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = dd.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', function (e) {
+      if (!dd.contains(e.target)) { dd.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); }
+    });
+    dd.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { dd.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); btn.focus(); }
+    });
+  });
+
   /* ---------------- Reveal on scroll ---------------- */
   var reveals = $$('.reveal');
   if ('IntersectionObserver' in window && !reduceMotion) {
