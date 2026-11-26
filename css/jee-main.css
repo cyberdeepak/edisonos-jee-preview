@@ -716,3 +716,17 @@
 @media (max-width: 767px) {
   .jee-tour_video { aspect-ratio: 760 / 560; object-fit: cover; }
 }
+
+/* ---------- Features: full-width Review sets card (fills the last bento row) ---------- */
+.jee-features_card.is-wide.is-dark { grid-column: 1 / -1; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 3rem; padding: 2.5rem; }
+.jee-features_card.is-dark .jee-features_tag-groups { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem 2rem; align-content: start; }
+.jee-features_card.is-dark .jee-features_tag-label { grid-row: 1; }
+.jee-features_card.is-dark .jee-features_tags { grid-row: 2; align-content: start; }
+@media (max-width: 991px) {
+  .jee-features_card.is-wide.is-dark { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+}
+@media (max-width: 767px) {
+  .jee-features_card.is-wide.is-dark { padding: 2rem; }
+  .jee-features_card.is-dark .jee-features_tag-groups { grid-template-columns: minmax(0, 1fr); }
+  .jee-features_card.is-dark .jee-features_tag-label, .jee-features_card.is-dark .jee-features_tags { grid-row: auto; }
+}
