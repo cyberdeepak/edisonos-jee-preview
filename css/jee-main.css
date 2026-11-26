@@ -712,3 +712,7 @@
 .jee-tour_points b { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-family--heading); }
 .jee-tour_points span:not(.badge-soon) { font-size: 0.875rem; color: var(--text-color--secondary); }
 @media (max-width: 991px) { .jee-tour_layout { grid-template-columns: minmax(0, 1fr); } }
+
+@media (max-width: 767px) {
+  .jee-tour_video { aspect-ratio: 760 / 560; object-fit: cover; }
+}

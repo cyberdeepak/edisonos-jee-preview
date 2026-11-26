@@ -340,6 +340,18 @@
     week.addEventListener('click', function (e) { if (moved) { e.preventDefault(); moved = false; } }, true);
   }
 
+  /* ---------------- Product tour: zoomed-in cut on phones so the text is readable ---------------- */
+  var tour = $('.jee-tour_video');
+  if (tour && window.matchMedia('(max-width: 767px)').matches) {
+    tour.poster = tour.getAttribute('data-mobile-poster');
+    $$('source', tour).forEach(function (src) {
+      src.src = src.type === 'video/webm' ? tour.getAttribute('data-mobile-webm') : tour.getAttribute('data-mobile-mp4');
+    });
+    tour.load();
+    var playPromise = tour.play();
+    if (playPromise && playPromise.catch) playPromise.catch(function () {});
+  }
+
   /* ---------------- White-label: institute name → logo + subdomain ---------------- */
   var preview = $('[data-brand-preview]');
   var brandInput = $('[data-brand-input]');
