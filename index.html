@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JEE Main Mock Test Platform for Coaching Institutes | EdisonOS</title>
+  <meta name="description" content="Run JEE Main mock tests and DPPs under your institute's brand. Turn PDF papers into online tests and get chapter-wise analysis for every student.">
+  <link rel="canonical" href="https://www.edisonos.com/jee-main-mock-test-platform">
+  <link rel="alternate" hreflang="en-IN" href="https://www.edisonos.com/jee-main-mock-test-platform">
+  <link rel="alternate" hreflang="x-default" href="https://www.edisonos.com/jee-main-mock-test-platform">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Preview copy: noindex so it never competes with the real edisonos.com page -->
+  <meta name="theme-color" content="#0b1120">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EdisonOS">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="Your JEE Main test series, on your own brand | EdisonOS">
+  <meta property="og:description" content="JEE Main mocks, DPPs, PDF-to-test conversion and chapter-wise analysis for coaching institutes, under your own brand.">
+  <meta property="og:url" content="https://www.edisonos.com/jee-main-mock-test-platform">
+  <meta property="og:image" content="https://www.edisonos.com/images/og-jee-main.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JEE Main Mock Test Platform for Coaching Institutes">
+  <meta name="twitter:description" content="Run your JEE Main test series under your brand, with chapter-wise analysis for every student.">
+  <meta name="twitter:image" content="https://www.edisonos.com/images/og-jee-main.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500;600&family=Rethink+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css?v=14">
+  <link rel="stylesheet" href="css/jee-main.css?v=14">
+  <script>document.documentElement.classList.remove('no-js');</script>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.edisonos.com/#organization",
+        "name": "EdisonOS",
+        "url": "https://www.edisonos.com/",
+        "logo": "https://cdn.prod.website-files.com/6a6d8459cbcde2a9c7f35c62/6a6d8459cbcde2a9c7f35d0a_256%20B.avif"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.edisonos.com/jee-main-mock-test-platform#webpage",
+        "url": "https://www.edisonos.com/jee-main-mock-test-platform",
+        "name": "JEE Main Mock Test Platform for Coaching Institutes",
+        "inLanguage": "en-IN",
+        "isPartOf": { "@id": "https://www.edisonos.com/#website" },
+        "about": { "@id": "https://www.edisonos.com/jee-main-mock-test-platform#software" },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.edisonos.com/" },
+            { "@type": "ListItem", "position": 2, "name": "JEE Main Mock Test Platform", "item": "https://www.edisonos.com/jee-main-mock-test-platform" }
+          ]
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.edisonos.com/jee-main-mock-test-platform#software",
+        "name": "EdisonOS for JEE Main",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web browser",
+        "description": "White-label online test platform for JEE coaching institutes: JEE Main mock tests, DPPs, question bank, PDF-to-test conversion, batch study plans, chapter-wise analytics and parent dashboards.",
+        "publisher": { "@id": "https://www.edisonos.com/#organization" },
+        "audience": { "@type": "EducationalAudience", "educationalRole": "teacher", "audienceType": "JEE coaching institutes and tutors" },
+        "offers": { "@type": "Offer", "url": "https://www.edisonos.com/pricing", "category": "Free trial available" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.edisonos.com/jee-main-mock-test-platform#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "How do I conduct online JEE Main mock tests for my coaching institute?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sign up for EdisonOS, add your batches and students, then build a JEE Main mock test from your own questions (or import your PDF papers with the AI Question Extractor) and assign it. Students take it in the browser, and faculty get a score report with subject, chapter and difficulty analysis for each student as soon as they submit." } },
+          { "@type": "Question", "name": "Can I run the JEE test series under my institute's own brand?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. EdisonOS is white-label: you can add your logo and favicon, run the portal on your own domain or an edisonos.com subdomain, and send emails from your own authenticated sender address. Students and parents see your institute, not ours." } },
+          { "@type": "Question", "name": "Can I convert my existing PDF question papers and DPPs into online tests?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. The AI Question Extractor (currently in beta) reads a PDF and turns it into structured questions you can review, tag by chapter and save to your question bank, then use in mock tests or DPPs." } },
+          { "@type": "Question", "name": "Is there an NTA-style test interface for JEE Main on EdisonOS?",
+            "acceptedAnswer": { "@type": "Answer", "text": "An NTA-style test screen for JEE Main is coming soon to EdisonOS, mirroring the real exam with a question palette, mark for review, numerical answer entry and +4 / −1 marking. Book a demo to see the roadmap and join early access." } },
+          { "@type": "Question", "name": "Do students need to install any software to take the test?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. Tests run in a web browser on a laptop or desktop. Before starting, a system-check screen confirms the browser, connection and display are ready, so students are not surprised mid-test." } },
+          { "@type": "Question", "name": "What analysis do faculty get after each JEE mock test?",
+            "acceptedAnswer": { "@type": "Answer", "text": "For every attempt you see the score, accuracy, time per question and gap to target; performance by subject, chapter and difficulty; performance by time spent; answer changes; a skill snapshot of strongest and weakest areas; and session logs. Batch reports show average, median, highest and lowest scores, and progress against each student's target." } },
+          { "@type": "Question", "name": "Can parents see their child's JEE preparation progress?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Parents get a read-only dashboard showing their child's scores, coursework, chapter-wise performance and review history, and they can be notified when a test is started or completed and before scheduled tests." } },
+          { "@type": "Question", "name": "Can I create batches and study plans for JEE students?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Create a group for each batch, add students and faculty, and attach a study plan of DPPs, resources and mock tests that unlock all at once, one after another or on a schedule, each with its own due date." } },
+          { "@type": "Question", "name": "What is the JEE Main exam pattern for Paper 1 (B.E./B.Tech)?",
+            "acceptedAnswer": { "@type": "Answer", "text": "JEE Main Paper 1 is a 3-hour computer-based test with 75 questions worth 300 marks: 25 each in Physics, Chemistry and Mathematics. Each subject has 20 multiple-choice questions and 5 numerical value questions, all compulsory. A correct answer earns +4 and an incorrect answer −1." } },
+          { "@type": "Question", "name": "How is EdisonOS priced for coaching institutes?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Plans are priced per academy, and student access is managed through test credits or time-based licences per programme. You can start with a free trial; see the pricing page or book a demo for a quote for your batch size." } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress_bar"></div></div>
+
+<div class="page-wrapper">
+
+  <!-- ===================== NAVIGATION (component) ===================== -->
+  <div class="navbar_component" data-nav>
+    <div class="padding-global">
+      <div class="container-large">
+        <nav class="navbar_container" aria-label="Main">
+          <a href="https://www.edisonos.com/" class="navbar_logo-link" aria-label="EdisonOS home">
+            <img src="https://cdn.prod.website-files.com/6a6d8459cbcde2a9c7f35c62/6a6d8459cbcde2a9c7f35d0a_256%20B.avif" alt="EdisonOS" class="navbar_logo" width="132" height="32">
+          </a>
+          <ul class="navbar_menu" id="navbar-menu" role="list">
+            <li><a href="#try-a-mock" class="navbar_link">Mini mock</a></li>
+            <li><a href="#features" class="navbar_link">Features</a></li>
+            <li><a href="#analysis" class="navbar_link">Analysis</a></li>
+            <li><a href="#exam-pattern" class="navbar_link">Exam pattern</a></li>
+            <li><a href="https://www.edisonos.com/pricing" class="navbar_link">Pricing</a></li>
+            <li class="navbar_menu-cta"><a href="https://www.edisonos.com/book-a-demo" class="button is-secondary is-small">Book a demo</a></li>
+          </ul>
+          <div class="navbar_actions">
+            <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary is-small navbar_demo">Book a demo</a>
+            <a href="https://console.edisonos.com/signup" class="button is-brand is-small">Start free trial</a>
+            <button class="navbar_menu-button" type="button" aria-expanded="false" aria-controls="navbar-menu" aria-label="Open menu" data-nav-toggle>
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" class="main-wrapper">
+
+    <!-- ===================== HERO ===================== -->
+    <header class="section_jee-hero section-style-dark">
+      <div class="jee-hero_background" aria-hidden="true">
+        <div class="jee-hero_grid"></div>
+        <div class="jee-hero_glow is-blue"></div>
+        <div class="jee-hero_glow is-pink"></div>
+        <div class="jee-hero_formula is-one">∮ E·dA = q/ε₀</div>
+        <div class="jee-hero_formula is-two">∫₀^π sin x dx = 2</div>
+        <div class="jee-hero_formula is-three">PV = nRT</div>
+        <div class="jee-hero_formula is-four">ΔG = ΔH − TΔS</div>
+      </div>
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="jee-hero_layout">
+            <div class="jee-hero_content">
+              <nav aria-label="Breadcrumb" class="jee-hero_breadcrumb text-size-small">
+                <a href="https://www.edisonos.com/">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">JEE Main</span>
+              </nav>
+              <div class="jee-hero_badge">
+                <span class="jee-hero_badge-dot" aria-hidden="true"></span>
+                For JEE coaching institutes &amp; tutors
+              </div>
+              <h1 class="jee-hero_heading">
+                <span class="jee-hero_kicker">The JEE Main mock test platform for coaching institutes</span>
+                <span class="jee-hero_headline">Sunday's mock.<br><span class="text-style-gradient">Monday's game plan.</span></span>
+              </h1>
+              <p class="text-size-large text-color-alternate-secondary jee-hero_paragraph">
+                Run your JEE Main test series under your own brand. Students write the mock on Sunday morning, and before they're home you know who's stuck on Rotational Motion, who's rushing, and who's guessing their way into negative marks.
+              </p>
+              <div class="button-group">
+                <a href="https://console.edisonos.com/signup" class="button is-brand">Start free trial
+                  <svg class="button_icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a href="#try-a-mock" class="button is-secondary-alternate">Take a 90-second mini mock</a>
+              </div>
+              <ul class="jee-hero_proof" role="list">
+                <li>Your logo, domain &amp; email</li>
+                <li>NTA-style test screen <span class="badge-soon">Coming soon</span></li>
+                <li>Parent dashboards included</li>
+              </ul>
+            </div>
+
+            <!-- Layered stack of real EdisonOS screens: Review Sets (back), Score progression (middle), Report overview (front) -->
+            <div class="jee-hero_visual" aria-hidden="true" data-parallax>
+              <div class="jee-hero_layer is-back" data-depth="0.6">
+                <div class="stack-review_component">
+                  <p class="stack-review_title">Review Sets</p>
+                  <p class="stack-review_sub">Suggested for you</p>
+                  <div class="stack-review_item"><span class="stack-review_icon is-red">✕</span><div><b>Incorrect questions</b><i>12 questions</i></div><span class="stack-review_button">+ Create</span></div>
+                  <div class="stack-review_item"><span class="stack-review_icon is-amber">▷</span><div><b>Skipped questions</b><i>7 questions</i></div><span class="stack-review_button">+ Create</span></div>
+                  <div class="stack-review_item"><span class="stack-review_icon is-pink">◷</span><div><b>Took you longest</b><i>13 questions</i></div><span class="stack-review_button">+ Create</span></div>
+                </div>
+              </div>
+              <div class="jee-hero_layer is-middle" data-depth="1.1">
+                <div class="stack-progress_component">
+                  <div class="stack-progress_head"><b>Score progression</b><span>Target 250</span></div>
+                  <svg class="stack-progress_chart" viewBox="0 0 280 120" preserveAspectRatio="none">
+                    <line x1="0" y1="18" x2="280" y2="18" class="stack-progress_target"/>
+                    <path class="stack-progress_area" d="M10,95 L53,79 L96,71 L140,55 L183,49 L226,36 L270,28 L270,120 L10,120 Z"/>
+                    <path class="stack-progress_line" d="M10,95 L53,79 L96,71 L140,55 L183,49 L226,36 L270,28"/>
+                    <circle cx="270" cy="28" r="5" class="stack-progress_dot"/>
+                  </svg>
+                  <div class="stack-progress_axis text-style-mono"><span>M1 · 148</span><span>M4 · 186</span><span>M7 · 212</span></div>
+                </div>
+              </div>
+              <div class="jee-hero_layer is-front" data-depth="1.8">
+              <div class="report-card_component" data-report>
+                <div class="report-card_header">
+                  <div>
+                    <div class="report-card_title">JEE Main Full Mock 07</div>
+                    <div class="report-card_meta"><span>Aarav S.</span><span>Assigned by: Vidya Classes</span></div>
+                  </div>
+                  <span class="report-card_attempt">Attempt 1 ▾</span>
+                </div>
+                <div class="report-card_tabs">
+                  <span class="is-active">Overview</span><span>Physics</span><span>Chemistry</span><span>Mathematics</span><span>Student Response Review</span>
+                </div>
+                <div class="report-card_body">
+                  <div class="report-card_score">
+                    <span class="report-card_label">Score</span>
+                    <span class="report-card_score-value text-style-mono" data-count-to="212">212</span>
+                    <span class="report-card_score-max">out of 300</span>
+                  </div>
+                  <div class="report-card_summary">
+                    <span class="report-card_label">Overall summary</span>
+                    <div class="report-card_stats">
+                      <div><span class="report-card_stat-label">Accuracy</span><b class="text-style-mono">82%</b><i>56 / 68</i></div>
+                      <div><span class="report-card_stat-label">Total time</span><b class="text-style-mono">2h 51m</b><i>~2m 17s / Qn</i></div>
+                      <div><span class="report-card_stat-label">Target score</span><b class="text-style-mono">250</b><i>38 pts to go</i></div>
+                    </div>
+                    <div class="report-card_bar-legend"><span>Total Questions: 75</span><span>Correct 56 · Incorrect 12 · Skipped 7</span></div>
+                    <div class="report-card_bar"><i class="is-correct" style="--w:56"></i><i class="is-incorrect" style="--w:12"></i><i class="is-skipped" style="--w:7"></i></div>
+                  </div>
+                </div>
+                <div class="report-card_sections">
+                  <div><span>Physics</span><b class="text-style-mono">68<i>/100</i></b></div>
+                  <div><span>Chemistry</span><b class="text-style-mono">76<i>/100</i></b></div>
+                  <div><span>Mathematics</span><b class="text-style-mono">68<i>/100</i></b></div>
+                </div>
+              </div>
+              </div>
+              <div class="jee-hero_float-card is-score">
+                <span class="jee-hero_float-icon is-amber">⏱</span>
+                <div>
+                  <div class="text-size-tiny text-color-muted">Performance by time</div>
+                  <div class="text-size-small text-weight-semibold">Time Sink (150s+): 13 questions</div>
+                </div>
+              </div>
+              <div class="jee-hero_float-card is-insight">
+                <span class="jee-hero_float-icon">↓</span>
+                <div>
+                  <div class="text-size-tiny text-color-muted">Top skill to improve</div>
+                  <div class="text-size-small text-weight-semibold">Rotational Motion · 3 / 8</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== CHAPTER MARQUEE ===================== -->
+    <section class="section_jee-marquee" aria-label="JEE Main chapters covered">
+      <div class="jee-marquee_track">
+        <ul class="jee-marquee_list" role="list">
+          <li>Kinematics</li><li>Rotational Motion</li><li>Electrostatics</li><li>Modern Physics</li><li>Thermodynamics</li><li>Mole Concept</li><li>Chemical Bonding</li><li>Coordination Compounds</li><li>GOC</li><li>Electrochemistry</li><li>Definite Integration</li><li>Conic Sections</li><li>Matrices &amp; Determinants</li><li>Probability</li><li>Vectors &amp; 3D</li><li>Complex Numbers</li>
+        </ul>
+        <ul class="jee-marquee_list" role="list" aria-hidden="true">
+          <li>Kinematics</li><li>Rotational Motion</li><li>Electrostatics</li><li>Modern Physics</li><li>Thermodynamics</li><li>Mole Concept</li><li>Chemical Bonding</li><li>Coordination Compounds</li><li>GOC</li><li>Electrochemistry</li><li>Definite Integration</li><li>Conic Sections</li><li>Matrices &amp; Determinants</li><li>Probability</li><li>Vectors &amp; 3D</li><li>Complex Numbers</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== PROBLEM ===================== -->
+    <section class="section_jee-problem">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-problem_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">Online test software for coaching institutes</div>
+            <h2>Your faculty should be teaching on Monday. <span class="text-color-secondary">Not checking OMR sheets till midnight.</span></h2>
+          </div>
+          <div class="jee-problem_list">
+            <article class="jee-problem_card reveal">
+              <div class="jee-problem_old"><span class="jee-problem_label">Today</span><s>Printed papers, OMR sheets and a whole weekend lost to checking</s></div>
+              <div class="jee-problem_new"><span class="jee-problem_label is-new">With EdisonOS</span>Students write the mock online. Score, accuracy and time per question land the second they hit submit.</div>
+            </article>
+            <article class="jee-problem_card reveal">
+              <div class="jee-problem_old"><span class="jee-problem_label">Today</span><s>Google Forms with no timer, no attempt rules and no clue why a student scored 140</s></div>
+              <div class="jee-problem_new"><span class="jee-problem_label is-new">With EdisonOS</span>Timed, scheduled mocks with attempt limits and resume rules, and a full report for every attempt. NTA-style screen coming soon.</div>
+            </article>
+            <article class="jee-problem_card reveal">
+              <div class="jee-problem_old"><span class="jee-problem_label">Today</span><s>"Sir, how is my child doing?" at every single PTM</s></div>
+              <div class="jee-problem_new"><span class="jee-problem_label is-new">With EdisonOS</span>Parents get their own dashboard and a ping when their child starts and finishes a test.</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MINI MOCK (interactive) ===================== -->
+    <section class="section_jee-mock section-style-dark" id="try-a-mock">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-mock_layout">
+            <div class="jee-mock_intro reveal">
+              <div class="text-style-tagline margin-bottom margin-xsmall">Try it yourself</div>
+              <h2 class="margin-bottom margin-small">Three questions. Ninety seconds. Let's see what you've got.</h2>
+              <p class="text-size-medium text-color-alternate-secondary margin-bottom margin-medium">
+                A JEE Main mini mock: one question each from Physics, Chemistry and Maths, including a numerical one, marked the JEE way (+4, −1, 0). Finish it and you get a pocket-sized version of the report your students get after every mock.
+              </p>
+              <ul class="jee-mock_facts" role="list">
+                <li><span class="text-style-mono">~2.4 min</span> per question in the real exam</li>
+                <li><span class="text-style-mono">90 sec</span> on the clock here, so no pressure</li>
+                <li><span class="text-style-mono">0</span> sign-ups needed</li>
+              </ul>
+            </div>
+
+            <div class="jee-mock_card" data-mock aria-live="polite">
+              <!-- Start screen -->
+              <div class="jee-mock_screen is-active" data-mock-screen="start">
+                <div class="jee-mock_start-icon" aria-hidden="true">⏱</div>
+                <h3 class="margin-bottom margin-xxsmall">The clock starts when you do</h3>
+                <p class="text-color-alternate-secondary margin-bottom margin-medium">3 questions · 90 seconds · +4 / −1 marking</p>
+                <button type="button" class="button is-brand" data-mock-start>Start mini mock</button>
+              </div>
+
+              <!-- Question screen -->
+              <div class="jee-mock_screen" data-mock-screen="question">
+                <div class="jee-mock_topbar">
+                  <span class="jee-mock_subject" data-mock-subject>Physics</span>
+                  <span class="jee-mock_progress text-size-small" data-mock-count>Question 1 of 3</span>
+                  <span class="jee-mock_timer text-style-mono" data-mock-timer>01:30</span>
+                </div>
+                <div class="jee-mock_timebar"><div class="jee-mock_timebar-fill" data-mock-timebar></div></div>
+                <p class="jee-mock_type text-size-tiny" data-mock-type>Section A · Multiple choice</p>
+                <p class="jee-mock_question" data-mock-question></p>
+                <div class="jee-mock_options" data-mock-options role="radiogroup" aria-label="Answer options"></div>
+                <div class="jee-mock_numeric hide" data-mock-numeric>
+                  <label for="mock-numeric-input" class="text-size-small text-color-alternate-secondary">Enter an integer answer</label>
+                  <input id="mock-numeric-input" class="jee-mock_input text-style-mono" type="text" inputmode="numeric" autocomplete="off" placeholder="e.g. 7" data-mock-input>
+                </div>
+                <div class="jee-mock_controls">
+                  <button type="button" class="button is-secondary-alternate is-small" data-mock-skip>Skip</button>
+                  <button type="button" class="button is-brand is-small" data-mock-next disabled>Save &amp; next</button>
+                </div>
+              </div>
+
+              <!-- Report screen: mirrors the real EdisonOS report (Overview + Performance by time + Response review) -->
+              <div class="jee-mock_screen" data-mock-screen="report">
+                <div class="jee-mock_report-top">
+                  <div class="jee-mock_report-score">
+                    <span class="jee-mock_report-label">Score</span>
+                    <span class="jee-mock_score text-style-mono" data-mock-score>0</span>
+                    <span class="jee-mock_score-max">out of 12</span>
+                  </div>
+                  <div class="jee-mock_report-summary">
+                    <span class="jee-mock_report-label">Overall summary</span>
+                    <div class="jee-mock_stats">
+                      <div><span>Accuracy</span><b class="text-style-mono" data-mock-accuracy>0%</b><i data-mock-accuracy-sub>0 / 0</i></div>
+                      <div><span>Total time spent</span><b class="text-style-mono" data-mock-time>0s</b><i data-mock-time-sub>~0s / Qn</i></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jee-mock_bar-legend text-size-tiny">
+                  <span>Total Questions: 3</span>
+                  <span>Correct <b data-mock-correct>0</b> · Incorrect <b data-mock-wrong>0</b> · Skipped <b data-mock-skipped>0</b> · Unvisited <b data-mock-unvisited>0</b></span>
+                </div>
+                <div class="jee-mock_bar" data-mock-bar></div>
+                <p class="jee-mock_report-label margin-top margin-medium">Performance by time</p>
+                <div class="jee-mock_time-buckets" data-mock-buckets></div>
+                <p class="jee-mock_report-label margin-top margin-medium">Student response review</p>
+                <ol class="jee-mock_review" data-mock-review role="list"></ol>
+                <div class="button-group margin-top margin-medium">
+                  <a href="https://console.edisonos.com/signup" class="button is-brand is-small">Give every student this report</a>
+                  <button type="button" class="button is-secondary-alternate is-small" data-mock-restart>Retake</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES (bento) ===================== -->
+    <section class="section_jee-features" id="features">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-features_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">JEE test series software</div>
+            <h2 class="margin-bottom margin-small">Everything a JEE test series needs. Nothing it doesn't.</h2>
+            <p class="text-size-medium text-color-secondary max-width-large">
+              EdisonOS is a JEE online test platform for coaching institutes: create and schedule mocks, assign daily practice, track every batch and keep parents informed, all under your own brand.
+            </p>
+          </div>
+
+          <div class="jee-features_bento">
+            <article class="jee-features_card is-wide is-blue reveal">
+              <div class="jee-features_card-content">
+                <h3 class="margin-bottom margin-xxsmall">Full &amp; chapter-wise mocks, on your rules</h3>
+                <p class="text-color-secondary">Build full-length JEE Main papers or short chapter tests from your own questions, then assign them to a batch or share an invitation link. Set attempts, resume, timing and schedule, and choose what students see after they submit.</p>
+              </div>
+              <div class="jee-features_settings" aria-hidden="true">
+                <p class="jee-features_settings-title">Advanced settings</p>
+                <div class="jee-features_setting"><span>Allow resume</span><i class="is-on"></i></div>
+                <div class="jee-features_setting"><span>Max attempts</span><b>Limited · 2</b></div>
+                <div class="jee-features_setting"><span>Schedule test</span><b>Sun, 9:00 AM</b></div>
+                <div class="jee-features_setting"><span>After submission</span><b>Full report</b></div>
+              </div>
+            </article>
+            <article class="jee-features_card is-soon reveal">
+              <span class="badge-soon">Coming soon</span>
+              <div class="jee-features_icon is-amber" aria-hidden="true">±</div>
+              <h3 class="margin-bottom margin-xxsmall">NTA-style test screen</h3>
+              <p class="text-color-secondary">A JEE Main exam screen with question palette, mark for review, numerical answer entry and +4 / −1 marking, so test day feels familiar.</p>
+            </article>
+            <article class="jee-features_card reveal">
+              <div class="jee-features_icon is-pink" aria-hidden="true">✎</div>
+              <h3 class="margin-bottom margin-xxsmall">DPPs that run themselves</h3>
+              <p class="text-color-secondary">Build DPPs as problem sets (linear, random or question-adaptive), switch on a timer or calculator, and drop them into a batch's study plan.</p>
+              <div class="feature-ui_segmented" aria-hidden="true"><span>Linear</span><span>Random</span><span class="is-active">Question adaptive</span></div>
+              <div class="feature-ui_toggles" aria-hidden="true"><span><i class="is-on"></i>Timer</span><span><i class="is-on"></i>Scientific calculator</span><span><i></i>Skip questions</span></div>
+            </article>
+            <article class="jee-features_card reveal">
+              <div class="jee-features_icon is-purple" aria-hidden="true">▦</div>
+              <h3 class="margin-bottom margin-xxsmall">Every question you've ever written, findable</h3>
+              <p class="text-color-secondary">Folders by subject and chapter, tags for topic and difficulty, and filters that find the right 25 questions for Sunday in seconds.</p>
+              <div class="feature-ui_tree" aria-hidden="true">
+                <div><span>▾ 📁 Physics</span></div>
+                <div class="is-nested"><span>▾ 📁 Mechanics</span></div>
+                <div class="is-nested-2 is-active"><span>📁 Rotational Motion</span><b>42</b></div>
+                <div class="is-nested-2"><span>📁 Gravitation</span><b>31</b></div>
+                <div class="feature-ui_filters"><span>Easy</span><span class="is-on">Medium</span><span class="is-on">Hard</span></div>
+              </div>
+            </article>
+            <article class="jee-features_card reveal">
+              <div class="jee-features_icon is-green" aria-hidden="true">?</div>
+              <h3 class="margin-bottom margin-xxsmall">Doubts, sorted</h3>
+              <p class="text-color-secondary">Students flag the exact question they're stuck on. Faculty resolve it, the student gets notified, and nobody scrolls through 400 WhatsApp messages.</p>
+              <div class="feature-ui_thread" aria-hidden="true">
+                <div class="feature-ui_bubble"><b>Doubt raised · Q14</b>Why is friction not doing work here?</div>
+                <div class="feature-ui_bubble is-reply"><b>Resolved</b>Rolling without slipping: the contact point is at rest.</div>
+              </div>
+            </article>
+            <article class="jee-features_card is-wide is-dark reveal">
+              <div class="jee-features_card-content">
+                <h3 class="margin-bottom margin-xxsmall text-color-alternate">Review sets that fix the <em>why</em></h3>
+                <p class="text-color-alternate-secondary">Auto-built sets of every incorrect, skipped, bookmarked and slowest question. While reviewing, students tag their confidence and mistake reason, so faculty see whether it's concepts, speed or traps.</p>
+              </div>
+              <div class="jee-features_tag-groups">
+                <p class="jee-features_tag-label">Confidence</p>
+                <ul class="jee-features_tags" role="list" aria-label="Example confidence tags">
+                  <li>Felt confident</li><li>Narrowed it down</li><li>Guessed it</li>
+                </ul>
+                <p class="jee-features_tag-label">Mistake reason</p>
+                <ul class="jee-features_tags" role="list" aria-label="Example mistake reasons">
+                  <li>Conceptual gap</li><li>Wrong approach</li><li>Out of time</li><li>Fell for trap</li><li>Stuck between choices</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ANALYSIS: real report sections (interactive) ===================== -->
+    <section class="section_jee-analysis section-style-light" id="analysis">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-analysis_layout">
+            <div class="jee-analysis_intro reveal">
+              <div class="text-style-tagline margin-bottom margin-xsmall">JEE chapter-wise analysis</div>
+              <h2 class="margin-bottom margin-small">Was it the concept, the clock, or the nerves?</h2>
+              <p class="text-size-medium text-color-secondary margin-bottom margin-medium">
+                Two students both score 180. One knows the concepts but runs out of time; the other guesses fast and bleeds marks. Every EdisonOS report shows which is which, so the fix is a targeted problem set instead of another generic mock.
+              </p>
+              <ul class="jee-analysis_list" role="list">
+                <li>Score, accuracy, time per question and gap to target score</li>
+                <li>Performance by subject, chapter and skill</li>
+                <li>Performance by difficulty and by time spent</li>
+                <li>Answer changes, full response review and session logs</li>
+                <li>Batch reports: average, median, highest, lowest and readiness</li>
+              </ul>
+            </div>
+
+            <div class="jee-analysis_widget reveal" data-analysis>
+              <div class="jee-analysis_widget-top">
+                <div class="jee-analysis_tabs" role="tablist" aria-label="Report section">
+                  <button type="button" role="tab" class="jee-analysis_tab is-active" aria-selected="true" data-panel="time">By time</button>
+                  <button type="button" role="tab" class="jee-analysis_tab" aria-selected="false" data-panel="difficulty">By difficulty</button>
+                  <button type="button" role="tab" class="jee-analysis_tab" aria-selected="false" data-panel="skills">Skill snapshot</button>
+                  <button type="button" role="tab" class="jee-analysis_tab" aria-selected="false" data-panel="changes">Answer changes</button>
+                </div>
+                <span class="jee-analysis_sample text-size-tiny">Sample report</span>
+              </div>
+
+              <div class="jee-analysis_panel is-active" data-panel-body="time" role="tabpanel">
+                <p class="jee-analysis_panel-title">Performance by time</p>
+                <p class="jee-analysis_panel-sub">How time spent per question affected the result</p>
+                <div class="jee-analysis_buckets">
+                  <div class="jee-analysis_bucket"><b>Blind guess</b><span>0–10s</span><div class="jee-analysis_stack"><i class="is-correct" style="--h:1"></i><i class="is-incorrect" style="--h:4"></i><i class="is-skipped" style="--h:2"></i></div><em>7 Qs</em></div>
+                  <div class="jee-analysis_bucket"><b>Rushed</b><span>11–40s</span><div class="jee-analysis_stack"><i class="is-correct" style="--h:6"></i><i class="is-incorrect" style="--h:4"></i><i class="is-skipped" style="--h:0"></i></div><em>10 Qs</em></div>
+                  <div class="jee-analysis_bucket is-best"><b>Ideal</b><span>41–90s</span><div class="jee-analysis_stack"><i class="is-correct" style="--h:22"></i><i class="is-incorrect" style="--h:2"></i><i class="is-skipped" style="--h:0"></i></div><em>24 Qs</em></div>
+                  <div class="jee-analysis_bucket"><b>Deep dive</b><span>91–150s</span><div class="jee-analysis_stack"><i class="is-correct" style="--h:20"></i><i class="is-incorrect" style="--h:1"></i><i class="is-skipped" style="--h:0"></i></div><em>21 Qs</em></div>
+                  <div class="jee-analysis_bucket is-worst"><b>Time sink</b><span>150s+</span><div class="jee-analysis_stack"><i class="is-correct" style="--h:7"></i><i class="is-incorrect" style="--h:1"></i><i class="is-skipped" style="--h:5"></i></div><em>13 Qs</em></div>
+                </div>
+                <div class="jee-analysis_legend"><span><i class="is-correct"></i>Correct</span><span><i class="is-incorrect"></i>Incorrect</span><span><i class="is-skipped"></i>Skipped</span></div>
+                <p class="jee-analysis_insight"><b>Read:</b> 4 of 7 blind guesses were wrong, which cost 4 marks to negative marking. 13 questions became time sinks.</p>
+              </div>
+
+              <div class="jee-analysis_panel" data-panel-body="difficulty" role="tabpanel" hidden>
+                <p class="jee-analysis_panel-title">Performance by difficulty</p>
+                <p class="jee-analysis_panel-sub">How score percentage changes by question difficulty</p>
+                <div class="jee-analysis_rows">
+                  <div class="jee-analysis_row"><span>Easy</span><div class="jee-analysis_meter"><i style="--p:92"></i></div><b class="text-style-mono">92%</b><em>23 / 25 · ~58s / Qn</em></div>
+                  <div class="jee-analysis_row"><span>Medium</span><div class="jee-analysis_meter"><i style="--p:78"></i></div><b class="text-style-mono">78%</b><em>25 / 32 · ~2m 10s / Qn</em></div>
+                  <div class="jee-analysis_row"><span>Hard</span><div class="jee-analysis_meter is-low"><i style="--p:44"></i></div><b class="text-style-mono">44%</b><em>8 / 18 · ~4m 05s / Qn</em></div>
+                </div>
+                <p class="jee-analysis_insight"><b>Read:</b> Easy and medium questions are secure; hard questions take nearly twice as long and return less than half the marks.</p>
+              </div>
+
+              <div class="jee-analysis_panel" data-panel-body="skills" role="tabpanel" hidden>
+                <p class="jee-analysis_panel-title">Skill snapshot</p>
+                <p class="jee-analysis_panel-sub">Based on points earned out of points possible</p>
+                <div class="jee-analysis_skills">
+                  <div>
+                    <p class="jee-analysis_skills-heading is-strong">Top strong skills</p>
+                    <ul role="list">
+                      <li><span>Mathematics · Matrices &amp; Determinants</span><b>100% · 3/3</b></li>
+                      <li><span>Chemistry · Mole Concept</span><b>100% · 2/2</b></li>
+                      <li><span>Physics · Current Electricity</span><b>83% · 5/6</b></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="jee-analysis_skills-heading is-weak">Top skills to improve</p>
+                    <ul role="list">
+                      <li><span>Physics · Rotational Motion</span><b>37% · 3/8</b></li>
+                      <li><span>Mathematics · Conic Sections</span><b>40% · 2/5</b></li>
+                      <li><span>Chemistry · Coordination Compounds</span><b>50% · 2/4</b></li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="jee-analysis_insight"><b>Next step:</b> assign a Rotational Motion problem set, or create a review set from the incorrect questions.</p>
+              </div>
+
+              <div class="jee-analysis_panel" data-panel-body="changes" role="tabpanel" hidden>
+                <p class="jee-analysis_panel-title">Answer changes</p>
+                <p class="jee-analysis_panel-sub">Tracks answer changes made to a question during a test attempt</p>
+                <div class="jee-analysis_changes">
+                  <div class="is-bad"><b class="text-style-mono">5</b><span>Correct → Incorrect</span></div>
+                  <div class="is-good"><b class="text-style-mono">2</b><span>Incorrect → Correct</span></div>
+                  <div><b class="text-style-mono">3</b><span>Incorrect → Incorrect</span></div>
+                </div>
+                <p class="jee-analysis_insight"><b>Read:</b> second-guessing cost more than it saved. Changing answers turned 5 right answers wrong.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PDF TO TEST ===================== -->
+    <section class="section_jee-pdf">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-pdf_layout">
+            <div class="jee-pdf_visual reveal" aria-hidden="true">
+              <div class="jee-pdf_document">
+                <div class="jee-pdf_document-head">DPP-23_Electrostatics.pdf</div>
+                <div class="jee-pdf_line is-long"></div><div class="jee-pdf_line"></div><div class="jee-pdf_line is-short"></div>
+                <div class="jee-pdf_line is-long"></div><div class="jee-pdf_line"></div>
+                <div class="jee-pdf_line is-long"></div><div class="jee-pdf_line is-short"></div>
+                <div class="jee-pdf_scan"></div>
+              </div>
+              <div class="jee-pdf_arrow">→</div>
+              <div class="jee-pdf_questions">
+                <div class="jee-pdf_question is-one"><b>Q1</b> Electric field due to a dipole… <span>Multiple choice · 4 options</span></div>
+                <div class="jee-pdf_question is-two"><b>Q2</b> Capacitance of a spherical… <span>Multiple choice · 4 options</span></div>
+                <div class="jee-pdf_question is-three"><b>Q3</b> Find the flux through… <span>Ready to review</span></div>
+              </div>
+            </div>
+            <div class="jee-pdf_content reveal">
+              <div class="text-style-tagline margin-bottom margin-xsmall">Convert PDF question papers to online tests</div>
+              <h2 class="margin-bottom margin-small">Ten years of DPPs in a Drive folder? Put them to work.</h2>
+              <p class="text-size-medium text-color-secondary margin-bottom margin-small">
+                Upload a PDF and the AI Question Extractor turns it into structured questions. Review and edit them, tag them by chapter and difficulty in your question bank, and use them in any mock or DPP.
+              </p>
+              <p class="text-size-small text-color-muted margin-bottom margin-medium">AI Question Extractor is in beta. Your content stays in your library.</p>
+              <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary">See it on your own PDF
+                <svg class="button_icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHITE-LABEL (interactive) ===================== -->
+    <section class="section_jee-brand section-style-dark">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-brand_layout">
+            <div class="jee-brand_content reveal">
+              <div class="text-style-tagline margin-bottom margin-xsmall">White-label JEE test platform</div>
+              <h2 class="margin-bottom margin-small">Your students should remember your name, not ours</h2>
+              <p class="text-size-medium text-color-alternate-secondary margin-bottom margin-medium">
+                Your logo and favicon across the portal, your own domain, and emails sent from your own address. Students and parents see your institute, not ours. Go on, type your institute name.
+              </p>
+              <div class="jee-brand_controls">
+                <label for="brand-name-input" class="text-size-small text-color-alternate-secondary">Your institute name</label>
+                <input id="brand-name-input" class="jee-brand_input" type="text" maxlength="28" value="Vidya Classes" data-brand-input>
+              </div>
+              <ul class="jee-brand_list" role="list">
+                <li>Logo &amp; favicon</li><li>Custom domain</li><li>Your sender email</li><li>Google &amp; Clever SSO</li>
+              </ul>
+            </div>
+
+            <!-- Mirrors the real student Overview screen -->
+            <div class="jee-brand_preview reveal" data-brand-preview aria-label="Preview of the student portal on your brand">
+              <div class="jee-brand_browser">
+                <div class="jee-brand_browser-bar">
+                  <i></i><i></i><i></i>
+                  <span class="jee-brand_url text-style-mono" data-brand-url>vidyaclasses.edisonos.com</span>
+                </div>
+                <div class="jee-brand_app">
+                  <div class="jee-brand_app-header">
+                    <span class="jee-brand_logo"><span class="jee-brand_logo-mark" data-brand-initial>V</span><span class="jee-brand_name" data-brand-name>Vidya Classes</span></span>
+                    <span class="jee-brand_program">JEE Main ▾</span>
+                    <span class="jee-brand_avatar">A</span>
+                  </div>
+                  <div class="jee-brand_app-layout">
+                    <div class="jee-brand_rail" aria-hidden="true">
+                      <span class="is-active">Overview</span><span>Study Plan</span><span>Practice Tests</span><span>Problem Sets</span><span>Review Sets</span>
+                    </div>
+                    <div class="jee-brand_app-body">
+                      <div class="jee-brand_greeting"><b>Good evening, Aarav!</b><span>Your progress at a glance</span></div>
+                      <div class="jee-brand_panel">
+                        <div class="jee-brand_panel-head"><b>Up next</b><span>3 of 9 assigned</span></div>
+                        <div class="jee-brand_task">
+                          <div><b>JEE Main Full Mock 08</b><span>Practice test · Assigned 2 days ago</span></div>
+                          <span class="jee-brand_task-button">Start</span>
+                        </div>
+                        <div class="jee-brand_task">
+                          <div><b>DPP 24 · Definite Integration</b><span>Problem set · Assigned today</span></div>
+                          <span class="jee-brand_task-link">Start ›</span>
+                        </div>
+                        <div class="jee-brand_task">
+                          <div><b>Rotational Motion · Chapter Test</b><span>Practice test · Assigned today</span></div>
+                          <span class="jee-brand_task-link">Start ›</span>
+                        </div>
+                      </div>
+                      <div class="jee-brand_counters">
+                        <span>Study plan <b>4</b></span><span>Practice tests <b>6</b></span><span>Problem sets <b>12</b></span><span>Resources <b>3</b></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== A WEEK AT YOUR INSTITUTE (story) ===================== -->
+    <section class="section_jee-week">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-week_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">How to conduct online JEE mock tests</div>
+            <h2 class="margin-bottom margin-small">One week at your institute, on EdisonOS</h2>
+            <p class="text-size-medium text-color-secondary max-width-large">The weekly rhythm every JEE batch already runs (mock, review, practice, repeat), with the checking, chasing and spreadsheets taken out.</p>
+          </div>
+        </div>
+      </div>
+      <div class="jee-week_scroller" data-week tabindex="0" aria-label="A week at your institute, scrollable">
+        <ol class="jee-week_track" role="list">
+          <li class="jee-week_day">
+            <div class="jee-week_when"><span class="jee-week_dayname">Saturday</span><span class="jee-week_time text-style-mono">9:00 AM</span></div>
+            <h3 class="jee-week_title">The reminder goes out</h3>
+            <p class="jee-week_text">24 hours before the mock, students and their parents get a reminder. Nobody "forgot it was this week".</p>
+            <div class="jee-week_ui" aria-hidden="true">
+              <div class="jee-week_notification"><span class="jee-week_bell">🔔</span><div><b>Test reminder</b><i>JEE Main Full Mock 08 starts tomorrow, 9:00 AM</i></div></div>
+              <div class="jee-week_notification is-faded"><span class="jee-week_bell">🔔</span><div><b>Test reminder · Parent</b><i>Aarav has a scheduled test tomorrow</i></div></div>
+            </div>
+          </li>
+          <li class="jee-week_day is-highlight">
+            <div class="jee-week_when"><span class="jee-week_dayname">Sunday</span><span class="jee-week_time text-style-mono">9:00 AM</span></div>
+            <h3 class="jee-week_title">The mock goes live</h3>
+            <p class="jee-week_text">Scheduled on Thursday, it unlocks for the whole batch on the dot. Resume rules and attempt limits are already set.</p>
+            <div class="jee-week_ui" aria-hidden="true">
+              <div class="jee-week_row"><span>Schedule test</span><b>Sun 9:00 AM – 12:00 PM</b></div>
+              <div class="jee-week_row"><span>Max attempts</span><b>Limited · 1</b></div>
+              <div class="jee-week_row"><span>Assigned to</span><b>Batch: JEE 2027 Dropper A</b></div>
+            </div>
+          </li>
+          <li class="jee-week_day">
+            <div class="jee-week_when"><span class="jee-week_dayname">Sunday</span><span class="jee-week_time text-style-mono">12:01 PM</span></div>
+            <h3 class="jee-week_title">Reports are already waiting</h3>
+            <p class="jee-week_text">Every student has a full report the second they submit. Parents get a "test completed" alert before lunch.</p>
+            <div class="jee-week_ui" aria-hidden="true">
+              <div class="jee-week_score"><b class="text-style-mono">212</b><span>/ 300</span><em>38 pts to target</em></div>
+              <div class="jee-week_minibar"><i style="--w:56" class="is-correct"></i><i style="--w:12" class="is-incorrect"></i><i style="--w:7" class="is-skipped"></i></div>
+            </div>
+          </li>
+          <li class="jee-week_day">
+            <div class="jee-week_when"><span class="jee-week_dayname">Monday</span><span class="jee-week_time text-style-mono">4:30 PM</span></div>
+            <h3 class="jee-week_title">Review, not regret</h3>
+            <p class="jee-week_text">Students open the review set of their incorrect and slowest questions, tag why they missed each one, and raise doubts.</p>
+            <div class="jee-week_ui" aria-hidden="true">
+              <div class="jee-week_chips"><span>Conceptual gap</span><span class="is-on">Out of time</span><span>Fell for trap</span></div>
+              <div class="jee-week_notification"><span class="jee-week_bell">?</span><div><b>Doubt raised · Q14</b><i>Rotational Motion · resolved by faculty</i></div></div>
+            </div>
+          </li>
+          <li class="jee-week_day">
+            <div class="jee-week_when"><span class="jee-week_dayname">Tuesday</span><span class="jee-week_time text-style-mono">7:00 AM</span></div>
+            <h3 class="jee-week_title">The fix is already assigned</h3>
+            <p class="jee-week_text">Faculty spotted Rotational Motion in the skill snapshot, so a DPP on it unlocks in the batch's study plan today.</p>
+            <div class="jee-week_ui" aria-hidden="true">
+              <div class="jee-week_plan"><span class="is-done">✓</span><b>Mock 08 review set</b></div>
+              <div class="jee-week_plan"><span class="is-open">●</span><b>DPP 25 · Rotational Motion</b><i>Due +2d</i></div>
+              <div class="jee-week_plan"><span class="is-locked">🔒</span><b>JEE Main Full Mock 09</b><i>Opens Sunday</i></div>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="padding-global">
+        <div class="container-large">
+          <div class="jee-week_hint text-size-small text-color-secondary" aria-hidden="true">Scroll sideways to follow the week <span>→</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ROLES ===================== -->
+    <section class="section_jee-roles section-style-light">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-roles_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">One platform, four dashboards</div>
+            <h2>One platform. Four very different people.</h2>
+          </div>
+          <div class="jee-roles_grid">
+            <article class="jee-roles_card reveal">
+              <span class="jee-roles_emoji" aria-hidden="true">🏫</span>
+              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Directors &amp; admins</h3>
+              <p class="text-color-secondary">Enrol students and faculty in bulk, manage licences and test credits, set branding, notifications and SSO, and see reports for every batch.</p>
+            </article>
+            <article class="jee-roles_card reveal">
+              <span class="jee-roles_emoji" aria-hidden="true">👩‍🏫</span>
+              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Faculty</h3>
+              <p class="text-color-secondary">See only their own batches. Assign mocks and DPPs, track progress dots, resolve doubts and build review sets for students.</p>
+            </article>
+            <article class="jee-roles_card reveal">
+              <span class="jee-roles_emoji" aria-hidden="true">🎯</span>
+              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Students</h3>
+              <p class="text-color-secondary">An "Up next" list, their study plan, every mock and DPP, review sets and a clear view of where they stand against their target.</p>
+            </article>
+            <article class="jee-roles_card reveal">
+              <span class="jee-roles_emoji" aria-hidden="true">👨‍👩‍👧</span>
+              <h3 class="heading-style-h4 margin-bottom margin-xxsmall">Parents</h3>
+              <p class="text-color-secondary">A read-only view of their child's scores, coursework, chapter performance and review history, with alerts when tests are completed.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXAM PATTERN (SEO content) ===================== -->
+    <section class="section_jee-pattern" id="exam-pattern">
+      <div class="padding-global padding-section-large">
+        <div class="container-medium">
+          <div class="jee-pattern_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">JEE Main exam pattern &amp; marking scheme</div>
+            <h2 class="margin-bottom margin-small">What your JEE Main mocks need to mirror</h2>
+            <p class="text-size-medium text-color-secondary">
+              <strong>JEE Main Paper 1 (B.E./B.Tech) is a 3-hour computer-based test with 75 questions worth 300 marks</strong>, 25 each in Physics, Chemistry and Mathematics. Every question counts: correct answers earn +4, wrong answers cost −1. Mock tests only build exam temperament if they copy this pattern exactly.
+            </p>
+          </div>
+
+          <div class="jee-pattern_table-wrapper reveal">
+            <table class="jee-pattern_table">
+              <caption class="visually-hidden">JEE Main Paper 1 question distribution by subject</caption>
+              <thead>
+                <tr><th scope="col">Subject</th><th scope="col">Section A<br><span>MCQs</span></th><th scope="col">Section B<br><span>Numerical value</span></th><th scope="col">Total questions</th><th scope="col">Marks</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Physics</th><td>20</td><td>5</td><td>25</td><td>100</td></tr>
+                <tr><th scope="row">Chemistry</th><td>20</td><td>5</td><td>25</td><td>100</td></tr>
+                <tr><th scope="row">Mathematics</th><td>20</td><td>5</td><td>25</td><td>100</td></tr>
+              </tbody>
+              <tfoot>
+                <tr><th scope="row">Total</th><td>60</td><td>15</td><td>75</td><td>300</td></tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <div class="jee-pattern_cards">
+            <div class="jee-pattern_card reveal"><span class="jee-pattern_value is-green text-style-mono">+4</span><p>for each correct answer, in both MCQs and numerical value questions</p></div>
+            <div class="jee-pattern_card reveal"><span class="jee-pattern_value is-red text-style-mono">−1</span><p>for each incorrect answer. Guessing has a cost in both sections.</p></div>
+            <div class="jee-pattern_card reveal"><span class="jee-pattern_value text-style-mono">0</span><p>for questions left unanswered or marked for review without an answer</p></div>
+          </div>
+
+          <div class="jee-pattern_facts reveal">
+            <h3 class="heading-style-h4 margin-bottom margin-small">Key facts at a glance</h3>
+            <dl class="jee-pattern_list">
+              <div><dt>Conducted by</dt><dd>National Testing Agency (NTA)</dd></div>
+              <div><dt>Mode</dt><dd>Computer-based test (CBT) at exam centres</dd></div>
+              <div><dt>Duration</dt><dd>3 hours (4 hours for eligible PwD candidates)</dd></div>
+              <div><dt>Sessions</dt><dd>Two sessions a year, typically January and April; the better NTA score counts</dd></div>
+              <div><dt>Numerical questions</dt><dd>All 5 per subject are compulsory; the answer is entered on an on-screen keypad</dd></div>
+              <div><dt>Leads to</dt><dd>NIT, IIIT and GFTI admissions, and eligibility for JEE Advanced (IIT admissions)</dd></div>
+            </dl>
+            <p class="text-size-tiny text-color-muted margin-top margin-medium">Based on the NTA information bulletin for recent sessions. Always confirm the current year's pattern on the official NTA JEE Main website.</p>
+          </div>
+
+          <div class="jee-pattern_tips reveal">
+            <h3 class="heading-style-h4 margin-bottom margin-small">How to use mock tests well in the final months</h3>
+            <ul class="jee-pattern_tips-list" role="list">
+              <li><b>Simulate the real slot.</b> Same 3-hour window, same timer, no breaks, on a computer rather than paper.</li>
+              <li><b>Analyse longer than you test.</b> The marks are made in the review: sort every wrong answer into concept, calculation, or time.</li>
+              <li><b>Practise skipping.</b> With −1 per wrong answer, knowing which questions to leave is a skill that only mocks can train.</li>
+              <li><b>Track chapters, not just totals.</b> A flat total can hide a rising Maths score and a falling Chemistry one.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPARISON ===================== -->
+    <section class="section_jee-compare section-style-light">
+      <div class="padding-global padding-section-large">
+        <div class="container-large">
+          <div class="jee-compare_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">Compare</div>
+            <h2>Why institutes move their test series to EdisonOS</h2>
+          </div>
+          <div class="jee-compare_table-wrapper reveal">
+            <table class="jee-compare_table">
+              <caption class="visually-hidden">EdisonOS compared with paper tests, generic quiz forms and general LMS tools</caption>
+              <thead>
+                <tr><th scope="col"></th><th scope="col">Paper &amp; OMR</th><th scope="col">Generic quiz forms</th><th scope="col">General LMS</th><th scope="col" class="is-highlight">EdisonOS</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">NTA-style test screen</th><td>✕</td><td>✕</td><td>✕</td><td class="is-highlight">Coming soon</td></tr>
+                <tr><th scope="row">Timed, scheduled tests with attempt rules</th><td>Manual</td><td>Limited</td><td>Partial</td><td class="is-highlight">✓</td></tr>
+                <tr><th scope="row">Instant analysis by chapter, difficulty &amp; time</th><td>✕</td><td>✕</td><td>Partial</td><td class="is-highlight">✓</td></tr>
+                <tr><th scope="row">PDF → online test</th><td>✕</td><td>✕</td><td>✕</td><td class="is-highlight">✓ <span class="text-size-tiny">beta</span></td></tr>
+                <tr><th scope="row">Batches &amp; scheduled study plans</th><td>✕</td><td>✕</td><td>✓</td><td class="is-highlight">✓</td></tr>
+                <tr><th scope="row">Parent dashboard</th><td>✕</td><td>✕</td><td>Partial</td><td class="is-highlight">✓</td></tr>
+                <tr><th scope="row">Your brand &amp; domain</th><td>✓</td><td>✕</td><td>Partial</td><td class="is-highlight">✓</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section_jee-faq" id="faq">
+      <div class="padding-global padding-section-large">
+        <div class="container-medium">
+          <div class="jee-faq_header reveal">
+            <div class="text-style-tagline margin-bottom margin-xsmall">FAQ</div>
+            <h2>Questions coaching institutes ask us</h2>
+          </div>
+          <div class="jee-faq_list">
+            <details class="jee-faq_item" open>
+              <summary><h3 class="jee-faq_question">How do I conduct online JEE Main mock tests for my coaching institute?</h3></summary>
+              <p class="jee-faq_answer">Sign up for EdisonOS, add your batches and students, then build a JEE Main mock test from your own questions (or import your PDF papers with the AI Question Extractor) and assign it. Students take it in the browser, and faculty get a score report with subject, chapter and difficulty analysis for each student as soon as they submit.</p>
+            </details>
+            <details class="jee-faq_item">
+              <summary><h3 class="jee-faq_question">Can I run the JEE test series under my institute's own brand?</h3></summary>
+              <p class="jee-faq_answer">Yes. EdisonOS is white-label: you can add your logo and favicon, run the portal on your own domain or an edisonos.com subdomain, and send emails from your own authenticated sender address. Students and parents see your institute, not ours.</p>
+            </details>
+            <details class="jee-faq_item">
+              <summary><h3 class="jee-faq_question">Can I convert my existing PDF question papers and DPPs into online tests?</h3></summary>
+              <p class="jee-faq_answer">Yes. The AI Question Extractor (currently in beta) reads a PDF and turns it into structured questions you can review, tag by chapter and save to your question bank, then use in mock tests or DPPs.</p>
+            </details>
+            <details class="jee-faq_item">
+              <summary><h3 class="jee-faq_question">Is there an NTA-style test interface for JEE Main on EdisonOS?</h3></summary>
+              <p class="jee-faq_answer">An NTA-style test screen for JEE Main is coming soon to EdisonOS, mirroring the real exam with a question palette, mark for review, numerical answer entry and +4 / −1 marking. <a href="https://www.edisonos.com/book-a-demo">Book a demo</a> to see the roadmap and join early access.</p>
+            </details>
+            <details class="jee-faq_item">
+              <summary><h3 class="jee-faq_question">Do students need to install any software to take the test?</h3></summary>
+              <p class="jee-faq_answer">No. Tests run in a web browser on a laptop or desktop. Before starting, a system-check screen confirms the browser, connection and display are ready, so students are not surprised mid-test.</p>
+            </details>
+            <details class="jee-faq_item">
+              <summary><h3 class="jee-faq_question">What analysis do faculty get after each JEE mock test?</h3></summary>
+              <p class="jee-faq_answer">For every attempt you see the score, accuracy, time per question and gap to target; performance by subject, chapter and difficulty; performance by time spent; answer changes; a skill snapshot of strongest and weakest areas; and session logs. Batch reports show average, median, highest and lowest scores, and progress against each student's target.</p>
+            </details>
+            <details class="jee-faq_item">
+              <summary><h3 class="jee-faq_question">Can parents see their child's JEE preparation progress?</h3></summary>
+              <p class="jee-faq_answer">Yes. Parents get a read-only dashboard showing their child's scores, coursework, chapter-wise performance and review history, and they can be notified when a test is started or completed and before scheduled tests.</p>
+            </details>
+            <details class="jee-faq_item">
+              <summary><h3 class="jee-faq_question">Can I create batches and study plans for JEE students?</h3></summary>
+              <p class="jee-faq_answer">Yes. Create a group for each batch, add students and faculty, and attach a study plan of DPPs, resources and mock tests that unlock all at once, one after another or on a schedule, each with its own due date.</p>
+            </details>
+            <details class="jee-faq_item">
+              <summary><h3 class="jee-faq_question">What is the JEE Main exam pattern for Paper 1 (B.E./B.Tech)?</h3></summary>
+              <p class="jee-faq_answer">JEE Main Paper 1 is a 3-hour computer-based test with 75 questions worth 300 marks: 25 each in Physics, Chemistry and Mathematics. Each subject has 20 multiple-choice questions and 5 numerical value questions, all compulsory. A correct answer earns +4 and an incorrect answer −1.</p>
+            </details>
+            <details class="jee-faq_item">
+              <summary><h3 class="jee-faq_question">How is EdisonOS priced for coaching institutes?</h3></summary>
+              <p class="jee-faq_answer">Plans are priced per academy, and student access is managed through test credits or time-based licences per programme. You can start with a free trial; see the <a href="https://www.edisonos.com/pricing">pricing page</a> or <a href="https://www.edisonos.com/book-a-demo">book a demo</a> for a quote for your batch size.</p>
+            </details>
+          </div>
+          <p class="text-size-small text-color-secondary text-align-center margin-top margin-large">
+            More answers in our <a href="https://www.edisonos.com/faq/psat" class="text-color-brand">FAQ</a> and <a href="https://www.edisonos.com/testprep-glossary" class="text-color-brand">test-prep glossary</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="section_jee-cta section-style-dark">
+      <div class="jee-cta_background" aria-hidden="true">
+        <div class="jee-hero_glow is-blue"></div>
+        <div class="jee-hero_glow is-pink"></div>
+      </div>
+      <div class="padding-global padding-section-large">
+        <div class="container-medium">
+          <div class="jee-cta_content text-align-center reveal">
+            <h2 class="margin-bottom margin-small">This Sunday's mock could <span class="text-style-gradient">run on EdisonOS.</span></h2>
+            <p class="text-size-large text-color-alternate-secondary margin-bottom margin-medium max-width-medium align-center">Start a free trial and set up your first batch tonight, or book a demo and we'll walk you through it using your own papers.</p>
+            <div class="button-group is-center">
+              <a href="https://console.edisonos.com/signup" class="button is-brand">Start free trial
+                <svg class="button_icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m0 0L9 4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary-alternate">Book a demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER (component) ===================== -->
+  <footer class="footer_component">
+    <div class="padding-global padding-section-medium">
+      <div class="container-large">
+        <div class="footer_top">
+          <div class="footer_brand">
+            <img src="https://cdn.prod.website-files.com/6a6d8459cbcde2a9c7f35c62/6a6d8459cbcde2a9c7f35d0a_256%20B.avif" alt="EdisonOS" class="footer_logo" width="132" height="32" loading="lazy">
+            <p class="text-size-small text-color-secondary margin-top margin-medium">The assessment platform for high-stakes exam prep.</p>
+          </div>
+          <div class="footer_links">
+            <div>
+              <p class="footer_heading">Product</p>
+              <ul role="list"><li><a href="https://www.edisonos.com/pricing">Pricing</a></li><li><a href="https://www.edisonos.com/changelog">Changelog</a></li><li><a href="https://www.edisonos.com/comparison">Compare</a></li><li><a href="https://help.edisonos.com/">Help Center</a></li></ul>
+            </div>
+            <div>
+              <p class="footer_heading">Exams</p>
+              <ul role="list"><li><a href="https://www.edisonos.com/jee-main-mock-test-platform" aria-current="page">JEE Main</a></li><li><a href="https://www.edisonos.com/free-digital-sat-practice-test">Digital SAT</a></li><li><a href="https://www.edisonos.com/free-act-online-practice-test">ACT</a></li></ul>
+            </div>
+            <div>
+              <p class="footer_heading">Company</p>
+              <ul role="list"><li><a href="https://www.edisonos.com/about-us">About us</a></li><li><a href="https://www.edisonos.com/customer-stories">Customer stories</a></li><li><a href="https://www.edisonos.com/contact-us">Contact</a></li><li><a href="https://security.edisonos.com/">Security</a></li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom text-size-small text-color-secondary">
+          <span>© 2026 EdisonOS. JEE Main is conducted by the National Testing Agency; EdisonOS is not affiliated with NTA.</span>
+          <span><a href="https://www.edisonos.com/privacy-policy">Privacy</a> · <a href="https://www.edisonos.com/terms-of-use">Terms</a></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky CTA -->
+  <div class="sticky-cta_component" data-sticky-cta>
+    <a href="https://console.edisonos.com/signup" class="button is-brand is-small">Start free trial</a>
+    <a href="https://www.edisonos.com/book-a-demo" class="button is-secondary is-small">Book a demo</a>
+  </div>
+</div>
+
+<script src="js/jee-main.js?v=14" defer></script>
+</body>
+</html>
